@@ -655,10 +655,11 @@ a:focus, button:focus, input:focus, textarea:focus, select:focus {
 /* Booking Calendar Styling */
 .booking-wrapper {
     max-width: 100%;
-    height: 204vh; /* Reverted to previous height (doubled) */
+    height: 100vh; /* Changed from 204vh to 100vh for better display */
     position: relative;
     overflow: hidden;
     border-radius: 0; /* No rounded corners for full-page embed */
+    margin-top: 80px; /* Add margin to account for header */
 }
 
 .booking-iframe {
@@ -673,13 +674,13 @@ a:focus, button:focus, input:focus, textarea:focus, select:focus {
 /* Responsive calendar */
 @media (max-width: 768px) {
     .booking-wrapper {
-        height: 190vh; /* Reverted to previous height for smaller screens */
+        height: 120vh; /* Changed from 190vh to 120vh for better display on mobile */
     }
 }
 
 @media (max-width: 576px) {
     .booking-wrapper {
-        height: 170vh; /* Reverted to previous height for the smallest screens */
+        height: 130vh; /* Changed from 170vh to 130vh for better display on small screens */
         border-radius: 8px;
     }
 }

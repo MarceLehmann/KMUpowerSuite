@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://www.kmupower-suite.com/sitemap.xml
+Sitemap: https://www.kmupowersuite.com/sitemap.xml
