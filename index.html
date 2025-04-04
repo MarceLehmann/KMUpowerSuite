@@ -106,7 +106,7 @@
                     <p itemprop="description">KMUpower Suite bietet massgeschneiderte Module für Ihre individuellen Geschäftsprozesse. Steigern Sie die Effizienz und Profitabilität Ihres Unternehmens mit unseren flexiblen Lösungen.</p>
                     <div class="hero-buttons">
                         <a href="#pricing" class="btn btn-primary">Pakete ansehen</a>
-                        <a href="#contact" class="btn btn-outline">Demo anfragen</a> <!-- Geändert auf #contact -->
+                        <a href="#contact" class="btn btn-outline">Termin vereinbaren</a>
                     </div>
                 </div>
             </div>
@@ -262,7 +262,7 @@
                             <h3 class="pricing-title">Basic Retainer</h3>
                             <div class="pricing-price">300 €/CHF<span>monatlich</span></div>
                         </div>
-                        <ul class="pricing-features"></ul>
+                        <ul class="pricing-features">
                             <li>2 Stunden Support pro Monat</li>
                             <li>Reaktionszeit 24-48 Stunden (werktags)</li>
                             <li>E-Mail Support</li>
@@ -315,8 +315,8 @@
             <div class="container">
                 <div class="cta-content">
                     <h2>Bereit, Ihr Geschäft auf die nächste Stufe zu heben?</h2>
-                    <p>Kontaktieren Sie uns noch heute für eine persönliche Demo der KMUpower Suite. Wir zeigen Ihnen, wie unsere modularen Lösungen Ihr Unternehmen effizienter machen können.</p>
-                    <a href="#contact" class="btn">Kostenlose Demo anfragen</a>
+                    <p>Vereinbaren Sie einen Termin für eine persönliche Demo der KMUpower Suite. Wir zeigen Ihnen, wie unsere modularen Lösungen Ihr Unternehmen effizienter machen können.</p>
+                    <a href="#contact" class="btn">Termin jetzt buchen</a>
                 </div>
             </div>
         </section>
@@ -381,93 +381,65 @@
         </section>
 
         <section id="contact" class="section">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Kontaktieren Sie uns</h2>
-                    <p>Vereinbaren Sie ein unverbindliches Beratungsgespräch oder fordern Sie eine Demo an</p>
+    <div class="container">
+        <div class="section-title">
+            <h2>Kontaktieren Sie uns</h2>
+            <p>Vereinbaren Sie einen Termin für ein unverbindliches Beratungsgespräch oder eine Demo</p>
+        </div>
+        <!-- Replace booking iframe with attractive CTA cards -->
+        <div class="contact-options">
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5v-5z"/></svg>
                 </div>
-                 <!-- Kontaktformular mit CSS Klassen -->
-                <div class="contact-form-wrapper">
-                     <!-- action="#" ist ein Platzhalter. Hier muss die URL zum verarbeitenden Skript hin. -->
-                     <!-- method="POST" ist üblich für Formulare. -->
-                    <form action="#" method="POST" itemscope itemtype="https://schema.org/ContactPoint">
-                        <div class="form-group">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" id="name" name="name" class="form-control" required> <!-- name Attribut hinzugefügt -->
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="form-label">E-Mail</label>
-                            <input type="email" id="email" name="email" class="form-control" required> <!-- name Attribut hinzugefügt -->
-                        </div>
-                        <div class="form-group">
-                            <label for="phone" class="form-label">Telefon (Optional)</label>
-                            <input type="tel" id="phone" name="phone" class="form-control"> <!-- name Attribut hinzugefügt -->
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="form-label">Ihre Nachricht</label>
-                            <textarea id="message" name="message" rows="5" class="form-control" required></textarea> <!-- name Attribut hinzugefügt -->
-                        </div>
-                        <!-- Add form honeypot for spam protection -->
-                        <div class="form-group" style="display:none">
-                            <label for="hp">Nicht ausfüllen</label>
-                            <input type="text" id="hp" name="hp">
-                        </div>
-                        <button type="submit" class="btn btn-primary form-button">Anfrage senden</button>
-                    </form>
-                </div>
+                <h3>Terminbuchung</h3>
+                <p>Reservieren Sie einen Termin für eine persönliche Demo oder ein Beratungsgespräch in unserem Online-Kalender.</p>
+                <a href="booking.html" class="btn btn-primary">Termin vereinbaren</a>
             </div>
-        </section>
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg>
+                </div>
+                <h3>E-Mail Anfrage</h3>
+                <p>Senden Sie uns eine E-Mail mit Ihren Fragen oder Anliegen. Wir antworten innerhalb eines Werktages.</p>
+                <a href="mailto:powersuite@thepoweraddicts.ch" class="btn btn-outline">E-Mail senden</a>
+            </div>
+        </div>
+    </div>
+</section>
+
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <a href="#" class="footer-logo">KMU<span>power</span> Suite</a> <!-- Logo als Link zum Home -->
-                    <p class="footer-description">Modulare Businesslösungen, die auf die Bedürfnisse von KMUs zugeschnitten sind. Steigern Sie Ihre Effizienz und Wettbewerbsfähigkeit.</p>
-                </div>
-                <div class="footer-column">
-                    <h4>Unternehmen</h4>
-                    <ul class="footer-links">
-                         <!-- Beispielhafte Links, ggf. anpassen -->
-                        <li><a href="#">Über uns</a></li>
-                        <li><a href="#">Karriere</a></li>
-                        <li><a href="#">Kontakt</a></li>
-                        <li><a href="#">Impressum</a></li>
-                        <li><a href="#">Datenschutz</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Produkte</h4>
-                    <!-- Korrekte (zweite) Version der Produktlinks -->
-                    <ul class="footer-links">
-                        <li><a href="#features">CRM</a></li>
-                        <li><a href="#features">Mailing</a></li>
-                        <li><a href="#features">Stundenerfassung</a></li>
-                        <li><a href="#features">Projektmanagement</a></li>
-                        <li><a href="#features">Rechnungsstellung</a></li>
-                        <li><a href="#features">Dokumentenmanagement</a></li>
-                        <li><a href="#features">Personalverwaltung</a></li>
-                         <!-- Fehlende aus Features hinzugefügt -->
-                        <li><a href="#features">Aufgabenverwaltung</a></li>
-                        <li><a href="#pricing">Preisgestaltung</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Support</h4>
-                    <ul class="footer-links">
-                        <li><a href="#faq">FAQ</a></li> <!-- Link auf die FAQ Sektion -->
-                        <li><a href="#">Dokumentation</a></li>
-                        <li><a href="#contact">Kontakt aufnehmen</a></li> <!-- Link auf Kontaktsektion -->
-                        <li><a href="#">Systemstatus</a></li>
-                    </ul>
-                </div>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <a href="#" class="footer-logo">KMU<span>power</span> Suite</a> <!-- Logo als Link zum Home -->
+                <p class="footer-description">Modulare Businesslösungen, die auf die Bedürfnisse von KMUs zugeschnitten sind. Steigern Sie Ihre Effizienz und Wettbewerbsfähigkeit.</p>
             </div>
-            <div class="copyright">
-                &copy; 2024 KMUpower Suite. Alle Rechte vorbehalten. <!-- Jahr aktualisiert -->
+            <div class="footer-column">
+                <h4>Produkte</h4>
+                <!-- Korrekte (zweite) Version der Produktlinks -->
+                <ul class="footer-links">
+                    <li><a href="#features">CRM</a></li>
+                    <li><a href="#features">Mailing</a></li>
+                    <li><a href="#features">Stundenerfassung</a></li>
+                    <li><a href="#features">Projektmanagement</a></li>
+                    <li><a href="#features">Rechnungsstellung</a></li>
+                    <li><a href="#features">Dokumentenmanagement</a></li>
+                    <li><a href="#features">Personalverwaltung</a></li>
+                    <!-- Fehlende aus Features hinzugefügt -->
+                    <li><a href="#features">Aufgabenverwaltung</a></li>
+                    <li><a href="#pricing">Preisgestaltung</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+        <div class="copyright">
+            &copy; 2025 KMUpower Suite. Alle Rechte vorbehalten. 
+            <p class="legal-info">KMUpower Suite ist ein Produkt von <a href="https://www.thepoweraddicts.ch" target="_blank">ThePowerAddicts.ch</a> | <a href="https://www.thepoweraddicts.ch/agb" target="_blank">AGB</a></p>
+        </div>
+    </div>
+</footer>
 
     <!-- Updated script tag with language detection -->
     <script>
@@ -489,16 +461,6 @@
         
         // Run language check on page load
         checkBrowserLanguage();
-        
-        // Existing FAQ toggle functionality
-        document.querySelectorAll('.faq-question').forEach(question => {
-            // ...existing code...
-        });
-
-        // Existing smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            // ...existing code...
-        });
     </script>
     <script src="assets/js/script.js"></script>
 </body>

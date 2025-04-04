@@ -558,6 +558,21 @@ footer {
     font-size: 0.9rem;
 }
 
+.legal-info {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.legal-info a {
+    color: var(--light);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.legal-info a:hover {
+    color: var(--primary);
+}
+
 /* Accessibility improvements */
 .screen-reader-text {
     border: 0;
@@ -642,6 +657,38 @@ a:focus, button:focus, input:focus, textarea:focus, select:focus {
     max-height: 40px;
     width: auto;
     display: block;
+}
+
+/* Booking Calendar Styling */
+.booking-wrapper {
+    max-width: 100%;
+    height: 204vh; /* Reverted to previous height (doubled) */
+    position: relative;
+    overflow: hidden;
+    border-radius: 0; /* No rounded corners for full-page embed */
+}
+
+.booking-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Responsive calendar */
+@media (max-width: 768px) {
+    .booking-wrapper {
+        height: 190vh; /* Reverted to previous height for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .booking-wrapper {
+        height: 170vh; /* Reverted to previous height for the smallest screens */
+        border-radius: 8px;
+    }
 }
 
 /* Responsive Anpassungen */
@@ -844,5 +891,74 @@ a:focus, button:focus, input:focus, textarea:focus, select:focus {
     
     .pricing-card, .feature-card {
         break-inside: avoid;
+    }
+}
+
+/* Contact Cards Styling */
+.contact-options {
+    display: flex;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background-color: var(--light);
+    border-radius: 16px;
+    padding: 3rem 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.contact-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(72, 224, 209, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-icon svg {
+    width: 40px;
+    height: 40px;
+    fill: var(--primary);
+}
+
+.contact-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+
+.contact-card p {
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.contact-card .btn {
+    min-width: 200px;
+}
+
+/* Responsive fixes for contact cards */
+@media (max-width: 768px) {
+    .contact-options {
+        flex-direction: column;
+    }
+    
+    .contact-card {
+        width: 100%;
     }
 }
