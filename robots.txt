@@ -1,5 +1,9 @@
 User-agent: *
 Allow: /
 
+# Block access to development or utility files
+Disallow: /assets/README-*.md
+Disallow: /*.json
+
 # Sitemaps
 Sitemap: https://www.kmupowersuite.com/sitemap.xml

@@ -168,7 +168,109 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+    
+    // Promotional banner functionality
+    loadPromoBanner();
 });
+
+// Function to load and process the promotional banner
+function loadPromoBanner() {
+    try {
+        // Remove any existing static banner first
+        const existingStaticBanner = document.querySelector('.promo-banner');
+        if (existingStaticBanner) {
+            existingStaticBanner.remove();
+        }
+        
+        // Remove any existing dynamic banner section
+        const existingBannerSection = document.querySelector('.banner-section');
+        if (existingBannerSection) {
+            existingBannerSection.remove();
+        }
+        
+        // Determine which banner file to load based on language
+        const isEnglishPage = document.body.classList.contains('en');
+        const bannerFile = isEnglishPage ? 'banner-control-en.html' : 'banner-control.html';
+        
+        fetch(bannerFile)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Banner file not found');
+                }
+                return response.text();
+            })
+            .then(content => {
+                // Only proceed if file is not empty (has content after trimming whitespace)
+                if (content.trim().length > 0) {
+                    // Create the banner section
+                    const bannerSection = document.createElement('section');
+                    bannerSection.className = 'section banner-section';
+                    bannerSection.innerHTML = `
+                        <div class="container">
+                            <div class="banner-content">
+                                ${content}
+                            </div>
+                        </div>
+                    `;
+                    
+                    // Insert the banner right after the header
+                    const header = document.querySelector('header');
+                    if (header && header.nextElementSibling) {
+                        header.parentNode.insertBefore(bannerSection, header.nextElementSibling);
+                    } else {
+                        // Fallback to inserting before features section
+                        const featuresSection = document.getElementById('features');
+                        if (featuresSection) {
+                            featuresSection.parentNode.insertBefore(bannerSection, featuresSection);
+                        }
+                    }
+                }
+            })
+            .catch(error => {
+                console.log('Banner could not be loaded:', error);
+                // In case of error, don't show banner
+            });
+    } catch (error) {
+        console.log('Banner error:', error);
+        // In case of error, don't show banner
+    }
+}
+
+// Function to check if a string is a valid date
+function isValidDate(dateString) {
+    // Check if it's a date in YYYY-MM-DD format
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(dateString)) {
+        return false;
+    }
+    
+    const date = new Date(dateString);
+    return !isNaN(date.getTime());
+}
+
+// Function to display the banner (improved)
+function showPromoBanner(content) {
+    console.log("Showing banner with content:", content); // Debug log
+    
+    // Create banner if it doesn't exist
+    if (!document.querySelector('.promo-banner')) {
+        const banner = document.createElement('div');
+        banner.className = 'promo-banner';
+        document.body.appendChild(banner);
+    }
+    
+    // Set content and show banner
+    const banner = document.querySelector('.promo-banner');
+    banner.innerHTML = content;
+    
+    // Force a browser reflow to ensure styles are applied
+    void banner.offsetWidth;
+    
+    // Show immediately and ensure visibility with inline style as backup
+    banner.style.display = 'block';
+    banner.classList.add('show');
+    
+    console.log("Banner element:", banner); // Debug log
+}
 
 // Function to add schema markup dynamically
 function addSchemaMarkup() {
@@ -200,4 +302,56 @@ function addSchemaMarkup() {
         faqScript.text = JSON.stringify(faqSchema);
         document.head.appendChild(faqScript);
     }
+    
+    // Add Product schema
+    const productSchema = {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "KMUpower Suite",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Cloud, Microsoft 365",
+        "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": "1000",
+            "highPrice": "7500",
+            "priceCurrency": "EUR",
+            "offerCount": "3"
+        },
+        "description": "KMUpower Suite ist eine modulare Business-Software für KMUs mit nahtloser Microsoft 365 Integration. CRM, Projektmanagement, Zeiterfassung, Rechnungsstellung und mehr in einer Plattform.",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "127"
+        },
+        "featureList": "CRM für KMU, Mailing/Newsletter-Modul, Mitarbeiterverwaltung, Zeiterfassung digital, Projektmanagement in Teams, Rechnungsstellung/Faktura, Serviceportal/Support"
+    };
+    
+    const productScript = document.createElement('script');
+    productScript.type = 'application/ld+json';
+    productScript.text = JSON.stringify(productSchema);
+    document.head.appendChild(productScript);
+    
+    // Add LocalBusiness schema
+    const businessSchema = {
+        "@context": "https://schema.org",
+        "@type": "SoftwareVendor",
+        "name": "KMUpower Suite by ThePowerAddicts",
+        "url": "https://www.kmupowersuite.com",
+        "logo": "https://www.kmupowersuite.com/assets/images/Logo_KMUpowerSuite.webp",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "CH"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+41-XXX-XXX-XXX",
+            "contactType": "customer service",
+            "availableLanguage": ["German", "English"]
+        }
+    };
+    
+    const businessScript = document.createElement('script');
+    businessScript.type = 'application/ld+json';
+    businessScript.text = JSON.stringify(businessSchema);
+    document.head.appendChild(businessScript);
 }

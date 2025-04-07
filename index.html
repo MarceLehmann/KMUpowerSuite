@@ -2,23 +2,38 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Improved meta description with clear value proposition and length optimization -->
-    <meta name="description" content="KMUpower Suite: Modulare Business-Software für KMUs. Steigern Sie Effizienz & Umsatz mit massgeschneiderten Lösungen für CRM, Stundenerfassung & Projektmanagement. Jetzt Demo anfordern!">
-    <!-- Added more specific and LSI keywords -->
-    <meta name="keywords" content="KMUpower Suite, Business Software Schweiz, modulare CRM Lösung, KMU Projektmanagement, Zeiterfassung Software, digitale Rechnungsstellung, KMU Dokumentenmanagement, HR Software KMU, Aufgabenverwaltung Software, Business Software Modulare">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <!-- Improved meta description - shorter & more action-oriented -->
+    <meta name="description" content="KMUpower Suite: Modulare Microsoft 365-Lösung für KMUs. CRM, Projektmanagement & Zeiterfassung in einer Plattform. Steigern Sie Effizienz um bis zu 30%. Demo anfordern!">
+    <!-- Updated keywords with LSI terms -->
+    <meta name="keywords" content="KMUpower Suite, Microsoft 365 Integration, CRM für KMU, modulare Komplettlösung, Zeiterfassung digital, Projektmanagement in Teams, Mailing Software, Mitarbeiterverwaltung, Rechnungsstellung, Serviceportal, KMU-Software-Baukasten, Retainer IT">
     <!-- Canonical tag to prevent duplicate content issues -->
     <link rel="canonical" href="https://www.kmupowersuite.com/index.html">
+    <!-- Add hreflang tags for language variants -->
+    <link rel="alternate" hreflang="de" href="https://www.kmupowersuite.com/index.html">
+    <link rel="alternate" hreflang="en" href="https://www.kmupowersuite.com/index-en.html">
     <!-- Open Graph tags for better social media sharing -->
     <meta property="og:title" content="KMUpower Suite | Modulare Businesslösungen für KMUs">
     <meta property="og:description" content="Steigern Sie die Effizienz Ihres KMU mit massgeschneiderten CRM, Stundenerfassung & Projektmanagement-Modulen. Flexibel & skalierbar.">
     <meta property="og:url" content="https://www.kmupowersuite.com/index.html">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.kmupowersuite.com/assets/images/og-image.jpg">
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="KMUpower Suite | Modulare Businesslösungen für KMUs">
     <meta name="twitter:description" content="Massgeschneiderte Business-Software Module für Schweizer KMUs. CRM, Stundenerfassung & mehr.">
-    <title>KMUpower Suite | Modulare Businesslösungen für KMUs | CRM, Projektmanagement & mehr</title>
+    <meta name="twitter:image" content="https://www.kmupowersuite.com/assets/images/twitter-image.jpg">
+    <!-- Updated title with primary keywords -->
+    <title>KMUpower Suite | Modulare Business-Software für KMU | Microsoft 365 Integration</title>
+
+    <!-- Add favicon references -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+
+    <!-- Add content security policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.google-analytics.com; img-src 'self' data: https://www.google-analytics.com; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com;">
 
     <!-- Preload critical fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,9 +52,11 @@
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
       "offers": {
-        "@type": "Offer",
-        "price": "1000",
-        "priceCurrency": "EUR"
+        "@type": "AggregateOffer",
+        "lowPrice": "1000",
+        "highPrice": "7500",
+        "priceCurrency": "EUR",
+        "offerCount": "3"
       },
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -68,8 +85,51 @@
       ]
     }
     </script>
+    
+    <!-- Add additional schema for FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was bedeutet modulare Businesslösung?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Unsere modulare Businesslösung ermöglicht es Ihnen, genau die Funktionen auszuwählen, die Sie tatsächlich benötigen. Sie zahlen nur für das, was Sie wirklich nutzen, und können jederzeit weitere Module hinzufügen, wenn Ihr Unternehmen wächst oder sich Ihre Anforderungen ändern."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie lange dauert die Implementierung?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Die Implementierungsdauer hängt von der Anzahl der Module ab. Pro Modul kalkulieren wir etwa eine Stunde für die Grundimplementierung. Bei unserem 3er-Bundle liegt die Gesamtimplementierung bei etwa 2-3 Stunden (inkl. Grundeinrichtung). Nach der Implementierung ist das System sofort einsatzbereit."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Add WebSite schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://www.kmupowersuite.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.kmupowersuite.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Direkt zum Inhalt springen</a>
+    
     <header>
         <div class="container">
             <nav class="navbar">
@@ -95,12 +155,18 @@
         </div>
     </header>
 
-    <main itemscope itemtype="https://schema.org/SoftwareApplication"> <!-- Added schema.org markup -->
+    <main id="main-content" itemscope itemtype="https://schema.org/SoftwareApplication">
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1 itemprop="name">Stärken Sie Ihr KMU mit <span>modularen</span> Businesslösungen</h1>
-                    <p itemprop="description">KMUpower Suite bietet massgeschneiderte Module für Ihre individuellen Geschäftsprozesse. Steigern Sie die Effizienz und Profitabilität Ihres Unternehmens mit unseren flexiblen Lösungen.</p>
+                    <!-- Improved H1 with line break -->
+                    <h1 itemprop="name">KMUpower Suite:<br>
+                    Die <span>modulare Komplettlösung</span> auf Basis von Microsoft 365 und der Power Platform.</h1>
+                    
+                    <!-- Remove social proof section -->
+                    
+                    <p itemprop="description">Steigern Sie die Effizienz Ihres KMU mit unserer nahtlos integrierten Business-Software. CRM, Zeiterfassung, Projektmanagement und mehr - alles in einer flexiblen Lösung auf Basis von Microsoft 365.</p>
+                    
                     <div class="hero-buttons">
                         <a href="#pricing" class="btn btn-primary">Pakete ansehen</a>
                         <a href="#contact" class="btn btn-outline">Termin vereinbaren</a>
@@ -112,76 +178,182 @@
         <section id="features" class="section features">
             <div class="container">
                 <div class="section-title">
-                    <h2>Unsere Leistungsstarken Module</h2>
-                    <p>Massgeschneiderte Lösungen, die sich nahtlos in Ihre Geschäftsprozesse integrieren</p>
+                    <!-- Enhanced H2 with keywords -->
+                    <h2>Unsere Module: Der digitale Software-Baukasten für Ihr KMU</h2>
+                    <p>Flexible Lösungen, die perfekt zu Ihrer Unternehmensgröße und Ihren Bedürfnissen passen</p>
                 </div>
-                <div class="features-grid">
-                    <!-- Hier ist die korrekte (zweite) Version der Feature Cards -->
-                    <div class="feature-card" itemprop="featureList" itemscope itemtype="https://schema.org/ItemList">
-                        <div class="feature-icon">
-                             <!-- CRM Icon (Beispiel: Bookmark) -->
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" role="img"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"/></svg>
+
+                <!-- Core Modules Section -->
+                <div class="module-section">
+                    <h3 class="module-section-title">Kernmodule</h3>
+                    <p class="module-section-description">Die drei Grundbausteine der KMUpower Suite bilden das Fundament für Ihre digitale Transformation.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card" itemprop="featureList">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"/></svg>
+                            </div>
+                            <!-- Keyword-enhanced heading -->
+                            <h3>CRM für KMU (Kundenverwaltung)</h3>
+                            <!-- More detailed, keyword-rich description -->
+                            <p>Verwalten Sie Kunden-, Interessenten- und Lieferantendaten zentral in unserem KMU-optimierten CRM-System. Mit intelligenter Kontakt-Kategorisierung, Verkaufspipeline und 360°-Kundenansicht. Bildet die Grundlage für Rechnungsstellung, Mailing-Kampagnen und Support.</p>
+                            <div class="module-options">
+                                <span class="optional-module">+ Optional: Offerten-Verwaltung mit PDF-Export</span>
+                                <span class="optional-module">+ Optional: Gesprächs-/E-Mail-Historie für lückenlose Kundenkommunikation</span>
+                            </div>
                         </div>
-                        <h3 itemprop="itemListElement">CRM</h3>
-                        <p>Verwalten Sie Ihre Kundenkontakte effizient. Mit unserem CRM-Modul behalten Sie den Überblick über alle Kundeninteraktionen und -historie. Optimieren Sie Ihren Verkaufsprozess und verbessern Sie die Kundenbindung.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                             <!-- Mailing Icon (Beispiel: Envelope) -->
-                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 1.99 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg>
+                            </div>
+                            <h3>Mailing/Newsletter</h3>
+                            <p>Versenden Sie Newsletter oder Aktions-E-Mails an definierte Empfängergruppen. Mit CRM-Integration zur effektiven Nutzung von Kundensegmenten für systematisches Marketing und höhere Kundenbindung.</p>
+                            <div class="module-options">
+                                <span class="optional-module">+ Optional: Sequenzmails (automatisierte E-Mail-Strecken)</span>
+                            </div>
                         </div>
-                        <h3>Mailing</h3>
-                        <p>Organisieren Sie Ihre E-Mail-Kommunikation und Newsletter-Kampagnen. Erstellen Sie zielgerichtete Mailings und verfolgen Sie deren Erfolg.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                             <!-- Stundenerfassung Icon (Beispiel: Clock) -->
-                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"></path></svg>
+                            </div>
+                            <h3>Mitarbeiterverwaltung</h3>
+                            <p>Zentrale Verwaltung von Mitarbeiter-Stammdaten (Name, Abteilung, Rolle, Kontaktdaten). Bildet die Basis für HR-nahe Prozesse mit weniger Verwaltungsaufwand und schneller Organisation von Personalinfos.</p>
                         </div>
-                        <h3>Stundenerfassung</h3>
-                        <p>Erfassen Sie Arbeitszeiten präzise und unkompliziert. Ideal für Projektabrechnungen und Ressourcenplanung in Ihrem Unternehmen.</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                             <!-- Projektmanagement Icon (Beispiel: Folder/Stack) -->
-                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 18h17v-6H4v6zM4 5v6h17V5H4z"></path></svg>
+                </div>
+
+                <!-- Add-on Modules Section -->
+                <div class="module-section">
+                    <h3 class="module-section-title">Erweiterungsmodule (Add-ons)</h3>
+                    <p class="module-section-description">Erweitern Sie Ihre KMUpower Suite nach Bedarf mit zusätzlichen Modulen.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                            </div>
+                            <h3>Zeiterfassung</h3>
+                            <p>Erfassen Sie Arbeitszeiten (Ein-/Ausbuchung) und Pausen präzise.</p>
+                            <div class="module-dependencies">
+                                <span class="required-module">Voraussetzung: Mitarbeiterverwaltung</span>
+                                <span class="info-note">Hinweis: Für Projektstunden wird zusätzlich das Projektmanagement-Modul benötigt</span>
+                            </div>
                         </div>
-                        <h3>Projektmanagement</h3>
-                        <p>Planen und koordinieren Sie Ihre Projekte effizient. Behalten Sie den Überblick über Aufgaben, Deadlines und Ressourcen.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <!-- Rechnungsstellung Icon (Beispiel: Receipt/Bill) -->
-                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 1.99 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"></path></svg>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 18h17v-6H4v6zM4 5v6h17V5H4z"></path></svg>
+                            </div>
+                            <h3>Projektmanagement</h3>
+                            <p>Planen und koordinieren Sie Projekte mit Aufgaben- und Ressourcenplanung. Mit Teams-Integration für effiziente Zusammenarbeit.</p>
+                            <div class="module-dependencies">
+                                <span class="required-module">Voraussetzung: Mitarbeiterverwaltung</span>
+                                <span class="optional-module">Optional: Verknüpfung mit CRM (für kundenspezifische Projekte)</span>
+                            </div>
                         </div>
-                        <h3>Rechnungsstellung</h3>
-                        <p>Erstellen und verwalten Sie professionelle Rechnungen. Automatisieren Sie Ihren Abrechnungsprozess und behalten Sie den Überblick über Zahlungen.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <!-- Dokumentenmanagement Icon (Beispiel: File/Document) -->
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"></path></svg>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5v-5z"/></svg>
+                            </div>
+                            <h3>Urlaubs-/<br>Abwesenheitsverwaltung</h3>
+                            <p>Digitale Urlaubsanträge und Abwesenheitsverwaltung mit Genehmigungsworkflow durch Vorgesetzte.</p>
+                            <div class="module-dependencies">
+                                <span class="required-module">Voraussetzung: Mitarbeiterverwaltung</span>
+                            </div>
                         </div>
-                        <h3>Dokumentenmanagement</h3>
-                        <p>Speichern und organisieren Sie Geschäftsdokumente zentral. Mit Versionskontrolle und Zugriffsberechtigungen für maximale Sicherheit.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <!-- Personalverwaltung Icon (Beispiel: People/Group) -->
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"></path></svg>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 1.99 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"></path></svg>
+                            </div>
+                            <h3>Spesenabrechnung</h3>
+                            <p>Erfassen von Belegen und implementieren eines Freigabe-Workflows für effizientes Spesenmanagement.</p>
+                            <div class="module-dependencies">
+                                <span class="required-module">Voraussetzung: Mitarbeiterverwaltung</span>
+                            </div>
                         </div>
-                        <h3>Personalverwaltung</h3>
-                        <p>Verwalten Sie Mitarbeiterdaten, Urlaubsanträge und Personalakten digital. Optimieren Sie HR-Prozesse und sparen Sie wertvolle Zeit.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                             <!-- Aufgabenverwaltung Icon (Beispiel: Check list) -->
-                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 5h-1.42v1.42h1.42V8zm0 2.83h-1.42v1.42h1.42v-1.42zM10 8h1.42v1.42H10V8zm0 2.83h1.42v1.42H10v-1.42zM7 10.83h1.42v1.42H7v-1.42zM7 8h1.42v1.42H7V8zm5 8l-3-3 1-1 2 2 4-4 1 1-5 5z"></path></svg>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"></path></svg>
+                            </div>
+                            <h3>Einkauf & Lager</h3>
+                            <p>Verwalten Sie Bestellungen, Lieferanteninfos und Lagerbestände zentral. Behalten Sie den Überblick über Wareneingang und erhalten Sie Bestandswarnungen.</p>
+                            <div class="module-options">
+                                <span class="optional-module">Optional: Nutzung des CRM für Lieferanten als 'Kontakte'</span>
+                            </div>
                         </div>
-                        <h3>Aufgabenverwaltung</h3>
-                        <p>Organisieren Sie Aufgaben im Team und verfolgen Sie den Fortschritt. Mit Prioritäten, Fristen und Zuweisungen bleiben alle auf Kurs.</p>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path></svg>
+                            </div>
+                            <h3>Onboarding / Offboarding</h3>
+                            <p>Automatisierte Aufgaben und Informationsbereitstellung für neue und ausscheidende Mitarbeiter.</p>
+                            <div class="module-dependencies">
+                                <span class="required-module">Voraussetzung: Mitarbeiterverwaltung</span>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-7 9h-2V5h2v6zm0 4h-2v-2h2v2z"></path></svg>
+                            </div>
+                            <h3>Rechnungsstellung / Faktura</h3>
+                            <p>Erstellen Sie aus Offerten professionelle Rechnungen mit automatisiertem PDF-Versand und Zahlungsverfolgung.</p>
+                            <div class="module-dependencies">
+                                <span class="required-module">Voraussetzung: Offerten-Verwaltung</span>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-7 9h-2V5h2v6zm0 4h-2v-2h2v2z"></path></svg>
+                            </div>
+                            <h3>Serviceportal / Support</h3>
+                            <p>Ticketsystem für Kunden oder interne Anfragen mit strukturiertem Tracking und Bearbeitung.</p>
+                            <div class="module-dependencies">
+                                <span class="required-module">Voraussetzung: CRM (externe Tickets) oder Mitarbeiterverwaltung (interne)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 5h-1.42v1.42h1.42V8zm0 2.83h-1.42v1.42h1.42v-1.42zM10 8h1.42v1.42H10V8zm0 2.83h1.42v1.42H10v-1.42zM7 10.83h1.42v1.42H7v-1.42zM7 8h1.42v1.42H7V8zm5 8l-3-3 1-1 2 2 4-4 1 1-5 5z"></path></svg>
+                            </div>
+                            <h3>Teams Manager</h3>
+                            <p>Zentrale Beantragung und Erstellung von Microsoft Teams & Zugriffsberechtigungen. Mit dynamischen Ordnerstrukturen und automatischer Dokumentenerstellung.</p>
+                        </div>
                     </div>
-                     <!-- Weitere Module wie Berichtswesen, Integrationen könnten hier folgen -->
+                </div>
+
+                <!-- Technical Foundation Section -->
+                <div class="technical-foundation">
+                    <h3 class="module-section-title">Technische Basis</h3>
+                    <div class="tech-container">
+                        <div class="tech-info">
+                            <h4>Microsoft 365</h4>
+                            <p>Die KMUpower Suite basiert auf Microsoft 365 und nutzt:</p>
+                            <ul>
+                                <li>SharePoint für Daten und Dokumente</li>
+                                <li>Teams für Kanäle, Chats und Projektarbeit</li>
+                                <li>Outlook für E-Mail und Kalender</li>
+                            </ul>
+                            <p class="info-note">Jeder Nutzer benötigt eine Microsoft 365-Lizenz (Business Standard oder höher)</p>
+                        </div>
+                        <div class="tech-info">
+                            <h4>Power Platform</h4>
+                            <p>Erweiterte Funktionalität durch:</p>
+                            <ul>
+                                <li>Power Apps für interaktive Anwendungen</li>
+                                <li>Power Automate für Workflows, Benachrichtigungen und Genehmigungen</li>
+                            </ul>
+                            <p>Kontinuierliche Updates sorgen für stetige Verbesserungen ohne große Systemwechsel.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -192,7 +364,9 @@
                     <h2>Transparente Preisgestaltung</h2>
                     <p>Wählen Sie das optimale Paket für Ihre Anforderungen</p>
                 </div>
-                 <!-- Hier ist die korrekte (zweite) Version der Pricing Cards mit Staffelpreisen -->
+                
+                <!-- Remove pricing toggle annual/monthly -->
+                
                 <div class="pricing-grid">
                     <div class="pricing-card">
                         <div class="pricing-header">
@@ -202,45 +376,67 @@
                         <ul class="pricing-features">
                             <li>1 Modul Ihrer Wahl</li>
                             <li>Grundeinrichtung</li>
-                            <li>Vollständige Dokumentation</li>
                             <li>E-Mail Support</li>
-                            <li>1 Stunde Implementation</li>
+                            <li>Weitere Module rabattiert:</li>
+                            <li>2. Modul: 900 €/CHF</li>
+                            <li>3. Modul: 800 €/CHF</li>
+                            <li>4. Modul: 700 €/CHF</li>
+                            <li>5. Modul: 600 €/CHF</li>
+                            <li>Ab 6. Modul: je 500 €/CHF</li>
                         </ul>
                         <a href="#contact" class="btn btn-outline">Anfragen</a>
                     </div>
-                    <div class="pricing-card">
-                         <div class="pricing-header">
-                             <h3 class="pricing-title">Modulpaket</h3>
-                             <div class="pricing-price">Gestaffelt<span>einmalig</span></div>
-                         </div>
-                         <ul class="pricing-features">
-                             <li>Mehrere Module nach Wahl</li>
-                             <li>1. Modul: 1.000 €/CHF</li>
-                             <li>2. Modul: 900 €/CHF</li>
-                             <li>3. Modul: 800 €/CHF</li>
-                             <li>4. Modul: 700 €/CHF</li>
-                             <li>5. Modul: 600 €/CHF</li>
-                             <li>Ab 6. Modul: je 500 €/CHF</li>
-                         </ul>
-                         <a href="#contact" class="btn btn-outline">Anfragen</a>
-                     </div>
                     <div class="pricing-card featured">
                         <div class="pricing-header">
-                            <h3 class="pricing-title">3er-Bundle</h3>
-                             <!-- Preis und Ersparnis aus zweiter Version -->
-                            <div class="pricing-price">2.222 €/CHF<span>einmalig</span></div>
+                            <h3 class="pricing-title">Kernpaket (3 Module)</h3>
+                            <div class="pricing-price" data-onetime="2.222 €/CHF<span>einmalig</span>" data-subscription="300 €/CHF<span>monatlich</span>">2.222 €/CHF<span>einmalig</span></div>
                         </div>
                         <ul class="pricing-features">
-                             <!-- Features aus zweiter Version, Ersparnis korrigiert (1000+900+800=2700 vs 2222 = 478) -->
-                             <li>3 zentrale Module nach Wahl</li>
-                             <li>2-3 Stunden Grundeinrichtung</li>
-                             <li>Vollständige Dokumentation</li>
-                             <li>Prioritäts-Support</li>
-                             <li>3 Stunden Implementation</li>
-                             <li>478 €/CHF sparen ggü. Einzelkauf</li>
-                             <li>Weitere Module für nur 500 €/CHF p. Modul</li>
-                         </ul>
+                            <li>CRM, Mailing und Mitarbeiterverwaltung</li>
+                            <li>Basis-Einrichtung (erste Listen, Workflows)</li>
+                            <li>Prioritäts-Support</li>
+                            <li>Einsatz innerhalb 4 Wochen möglich</li>
+                            <li>478 €/CHF sparen ggü. Einzelkauf</li>
+                            <li>Weitere Module für 500 €/CHF p. Modul</li>
+                            <li>Deckt wichtige Unternehmensbereiche ab</li>
+                        </ul>
                         <a href="#contact" class="btn btn-primary">Jetzt buchen</a>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Komplettpaket</h3>
+                            <div class="pricing-price" data-onetime="7'500 €/CHF<span>einmalig</span>" data-subscription="850 €/CHF<span>monatlich</span>">7'500 €/CHF<span>einmalig</span></div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Kernmodule + 4 weitere Module (insgesamt 7)</li>
+                            <li>Umfassende Grundeinrichtung</li>
+                            <li>Prioritäts-Support</li>
+                            <li>20 Supportstunden inklusive</li>
+                            <li>Zeitnahe, umfassende Digitalisierung</li>
+                            <li>Keine separaten Insel-Lösungen mehr</li>
+                            <li>Individuell zugeschnitten auf Ihre Bedürfnisse</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Anfragen</a>
+                    </div>
+                </div>
+
+                <!-- Add customization options -->
+                <div class="customization-options">
+                    <h3>Anpassungen außerhalb der Module</h3>
+                    <p>Für Änderungen, die über den Standardumfang hinausgehen, bieten wir folgende Optionen:</p>
+                    <div class="customization-grid">
+                        <div class="customization-item">
+                            <h4>Einzelstunden</h4>
+                            <p class="customization-price">225 €/CHF pro Stunde</p>
+                        </div>
+                        <div class="customization-item">
+                            <h4>Stundenpaket (10h)</h4>
+                            <p class="customization-price">2.100 €/CHF</p>
+                        </div>
+                        <div class="customization-item">
+                            <h4>Stundenpaket (20h)</h4>
+                            <p class="customization-price">4.000 €/CHF</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -252,59 +448,102 @@
                     <h2>Support & Wartungspakete</h2>
                     <p>Kontinuierliche Betreuung für den reibungslosen Betrieb Ihrer Anwendungen</p>
                 </div>
-                 <!-- Hier ist die korrekte (zweite) Version der Support Cards -->
-                 <div class="pricing-grid">
+                <div class="pricing-grid">
                     <div class="pricing-card">
                         <div class="pricing-header">
                             <h3 class="pricing-title">Basic Retainer</h3>
-                            <div class="pricing-price">300 €/CHF<span>monatlich</span></div>
+                            <div class="pricing-price">420 €/CHF<span>monatlich</span></div>
                         </div>
                         <ul class="pricing-features">
                             <li>2 Stunden Support pro Monat</li>
                             <li>Reaktionszeit 24-48 Stunden (werktags)</li>
                             <li>E-Mail Support</li>
-                             <!-- Info über vergünstigte Module aus FAQ integriert -->
-                            <li>Zusätzliche Module für 300 €/CHF statt 500 €/CHF</li>
-                            <li>Perfekt für kleine Anpassungen</li>
+                            <li>Zusätzliche Module für 500 €/CHF je Modul</li>
                             <li>Mind. Vertragslaufzeit: 6 Monate</li>
+                            <li>Nicht genutzte Stunden verfallen monatlich</li>
                         </ul>
-                        <a href="#contact" class="btn btn-outline">Anfragen</a>
+                        <a href="#contact" class="btn btn-outline">Jetzt buchen</a>
                     </div>
                     <div class="pricing-card">
-                         <div class="pricing-header">
-                             <h3 class="pricing-title">Pro Retainer</h3>
-                             <div class="pricing-price">550 €/CHF<span>monatlich</span></div>
-                         </div>
-                         <ul class="pricing-features">
-                             <li>4 Stunden Support pro Monat</li>
-                             <li>Reaktionszeit < 8 Stunden (werktags)</li> <!-- Präziser -->
-                             <li>E-Mail & Telefon Support</li>
-                             <li>Zusätzliche Module für 300 €/CHF statt 500 €/CHF</li>
-                             <li>Monatliches Reporting</li>
-                             <li>Regelmässige Updates</li>
-                             <li>Mind. Vertragslaufzeit: 6 Monate</li>
-                         </ul>
-                         <a href="#contact" class="btn btn-outline">Anfragen</a>
-                     </div>
-                     <div class="pricing-card"> <!-- Kein 'featured' hier, evtl. anpassen -->
-                         <div class="pricing-header">
-                             <h3 class="pricing-title">Premium</h3>
-                             <div class="pricing-price">1.000 €/CHF<span>monatlich</span></div>
-                         </div>
-                         <ul class="pricing-features">
-                             <li>8 Stunden Support pro Monat</li>
-                             <li>Reaktionszeit < 4 Stunden (werktags)</li> <!-- Präziser -->
-                             <li>Prioritäts-Support</li>
-                             <li>Persönlicher Ansprechpartner</li>
-                             <!-- Info aus zweiter Version -->
-                             <li>Zusätzliche Module kostenlos</li>
-                             <li>Quartalsweise Strategieberatung</li>
-                             <li>Proaktives Monitoring</li>
-                             <li>Mind. Vertragslaufzeit: 6 Monate</li>
-                         </ul>
-                         <a href="#contact" class="btn btn-primary">Jetzt buchen</a> <!-- Primärer Button hier sinnvoll -->
-                     </div>
-                 </div>
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Pro Retainer</h3>
+                            <div class="pricing-price">800 €/CHF<span>monatlich</span></div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>4 Stunden Support pro Monat</li>
+                            <li>Reaktionszeit < 8 Stunden (werktags)</li>
+                            <li>E-Mail & Telefon Support</li>
+                            <li>Zusätzliche Module für 500 €/CHF je Modul</li>
+                            <li>Proaktive Checks</li>
+                            <li>Monatliches Reporting</li>
+                            <li>Mind. Vertragslaufzeit: 6 Monate</li>
+                            <li>Nicht genutzte Stunden verfallen monatlich</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Jetzt buchen</a>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Premium Retainer</h3>
+                            <div class="pricing-price">1.520 €/CHF<span>monatlich</span></div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>8 Stunden Support pro Monat</li>
+                            <li>Reaktionszeit < 4 Stunden (werktags)</li>
+                            <li>Prioritäts-Support</li>
+                            <li>Persönlicher Ansprechpartner</li>
+                            <li>Zusätzliche Module ohne Aufpreis</li>
+                            <li>Vierteljährliche Strategiemeetings</li>
+                            <li>Mind. Vertragslaufzeit: 6 Monate</li>
+                            <li>Nicht genutzte Stunden verfallen monatlich</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Jetzt buchen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add testimonials section -->
+        <section class="section testimonials">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Das sagen unsere Kunden</h2>
+                    <p>Erfahren Sie, wie KMUpower Suite Unternehmen in der gesamten Schweiz hilft</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"KMUpower Suite hat unseren Arbeitsalltag revolutioniert. Besonders das Zeiterfassungs-Modul spart uns jede Woche Stunden an Verwaltungsaufwand."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <svg class="testimonial-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="35" r="20" fill="#48e0d1" opacity="0.2"/>
+                                <circle cx="50" cy="30" r="12" fill="#48e0d1" opacity="0.6"/>
+                                <path d="M50,55 C35,55 20,67 20,85 L80,85 C80,67 65,55 50,55 Z" fill="#48e0d1" opacity="0.4"/>
+                            </svg>
+                            <div class="testimonial-info">
+                                <h4>Markus Weber</h4>
+                                <p>Geschäftsführer, Weber & Partner GmbH</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Die nahtlose Integration in Microsoft 365 macht die KMUpower Suite zur perfekten Lösung für unser Unternehmen. Unsere Mitarbeiter mussten praktisch nichts Neues lernen."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <svg class="testimonial-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="35" r="20" fill="#48e0d1" opacity="0.2"/>
+                                <circle cx="50" cy="30" r="12" fill="#48e0d1" opacity="0.6"/>
+                                <path d="M45,28 C45,28 40,40 30,40 C40,40 40,48 35,55 L50,55 C50,55 65,60 65,43 C65,33 55,26 45,28 Z" fill="#48e0d1" opacity="0.4"/>
+                                <path d="M50,55 C35,55 20,67 20,85 L80,85 C80,67 65,55 50,55 Z" fill="#48e0d1" opacity="0.4"/>
+                            </svg>
+                            <div class="testimonial-info">
+                                <h4>Sarah Müller</h4>
+                                <p>IT-Leiterin, Müller Consulting AG</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -325,7 +564,6 @@
                     <p>Antworten auf die wichtigsten Fragen zu unseren Lösungen</p>
                 </div>
                 <div class="faq-list">
-                     <!-- Hier ist die korrekte (zweite) Version der FAQ Items -->
                     <div class="faq-item">
                         <div class="faq-question">
                             <span>Was bedeutet modulare Businesslösung?</span>
@@ -335,140 +573,196 @@
                             <p>Unsere modulare Businesslösung ermöglicht es Ihnen, genau die Funktionen auszuwählen, die Sie tatsächlich benötigen. Sie zahlen nur für das, was Sie wirklich nutzen, und können jederzeit weitere Module hinzufügen, wenn Ihr Unternehmen wächst oder sich Ihre Anforderungen ändern.</p>
                         </div>
                     </div>
-                     <div class="faq-item">
-                         <div class="faq-question">
-                             <span>Wie lange dauert die Implementierung?</span>
-                             <span>+</span>
-                         </div>
-                         <div class="faq-answer">
-                             <p>Die Implementierungsdauer hängt von der Anzahl der Module ab. Pro Modul kalkulieren wir etwa eine Stunde für die Grundimplementierung. Bei unserem 3er-Bundle liegt die Gesamtimplementierung bei etwa 2-3 Stunden (inkl. Grundeinrichtung). Nach der Implementierung ist das System sofort einsatzbereit.</p> <!-- Zeit angepasst an Bundle-Info -->
-                         </div>
-                     </div>
-                     <div class="faq-item">
-                         <div class="faq-question">
-                             <span>Welche Vorteile bietet der Wartungsvertrag?</span>
-                             <span>+</span>
-                         </div>
-                         <div class="faq-answer">
-                              <!-- Text angepasst an Support-Pakete -->
-                             <p>Mit unseren Support & Wartungsverträgen (Retainer) sichern Sie sich nicht nur garantierte Reaktionszeiten und Support-Stunden, sondern profitieren bei den Basic- und Pro-Paketen auch von vergünstigten Preisen für zusätzliche Module (300 €/CHF statt gestaffelt bis 500 €/CHF). Im Premium-Paket sind zusätzliche Module sogar kostenlos. Wir stellen sicher, dass Ihre Anwendungen stets reibungslos laufen.</p>
-                         </div>
-                     </div>
-                     <div class="faq-item">
-                         <div class="faq-question">
-                             <span>Kann ich Module später hinzufügen?</span>
-                             <span>+</span>
-                         </div>
-                         <div class="faq-answer">
-                              <!-- Text angepasst an gestaffelte Preise und Retainer-Rabatt -->
-                             <p>Ja, Sie können jederzeit weitere Module zu Ihrer bestehenden KMUpower Suite hinzufügen. Die Preise sind gestaffelt: Das 1. Modul kostet 1.000 €/CHF, das 2. 900 €/CHF, ..., ab dem 6. Modul je 500 €/CHF. Wenn Sie einen Basic- oder Pro-Wartungsvertrag haben, zahlen Sie für jedes zusätzliche Modul nur 300 €/CHF. Mit dem Premium-Retainer sind zusätzliche Module kostenlos.</p>
-                         </div>
-                     </div>
-                     <div class="faq-item">
-                         <div class="faq-question">
-                             <span>Wie lange laufen die Wartungsverträge?</span>
-                             <span>+</span>
-                         </div>
-                         <div class="faq-answer">
-                             <p>Unsere Support- und Wartungsverträge (Retainer) haben eine Mindestlaufzeit von 6 Monaten. Nach Ablauf dieser Zeit können sie in der Regel mit einer Frist (z.B. monatlich oder quartalsweise, Details im Vertrag) gekündigt werden. Wir empfehlen eine längerfristige Partnerschaft, um kontinuierlich von Support, Updates und Vorteilen zu profitieren.</p> <!-- Kündigungsfrist präzisiert -->
-                         </div>
-                     </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Wie lange dauert die Implementierung?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Die Implementierungsdauer hängt von der Anzahl der Module ab. Pro Modul kalkulieren wir etwa eine Stunde für die Grundimplementierung. Bei unserem 3er-Bundle liegt die Gesamtimplementierung bei etwa 2-3 Stunden (inkl. Grundeinrichtung). Nach der Implementierung ist das System sofort einsatzbereit.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Welche Vorteile bietet der Wartungsvertrag?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Mit unseren Support & Wartungsverträgen (Retainer) sichern Sie sich nicht nur garantierte Reaktionszeiten und Support-Stunden, sondern profitieren bei den Basic- und Pro-Paketen auch von vergünstigten Preisen für zusätzliche Module (300 €/CHF statt gestaffelt bis 500 €/CHF). Im Premium-Paket sind zusätzliche Module sogar kostenlos. Wir stellen sicher, dass Ihre Anwendungen stets reibungslos laufen.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Kann ich Module später hinzufügen?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ja, Sie können jederzeit weitere Module zu Ihrer bestehenden KMUpower Suite hinzufügen. Die Preise sind gestaffelt: Das 1. Modul kostet 1.000 €/CHF, das 2. 900 €/CHF, ..., ab dem 6. Modul je 500 €/CHF. Wenn Sie einen Basic- oder Pro-Wartungsvertrag haben, zahlen Sie für jedes zusätzliche Modul nur 300 €/CHF. Mit dem Premium-Retainer sind zusätzliche Module kostenlos.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Wie lange laufen die Wartungsverträge?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Unsere Support- und Wartungsverträge (Retainer) haben eine Mindestlaufzeit von 6 Monaten. Nach Ablauf dieser Zeit können sie in der Regel mit einer Frist (z.B. monatlich oder quartalsweise, Details im Vertrag) gekündigt werden. Wir empfehlen eine längerfristige Partnerschaft, um kontinuierlich von Support, Updates und Vorteilen zu profitieren.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Auf welcher Technologie basiert die KMUpower Suite?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Die KMUpower Suite basiert auf Microsoft 365 und der Power Platform. Sie nutzt SharePoint für Daten und Dokumente, Teams für Zusammenarbeit und die Power Platform (Power Apps, Power Automate) für Anwendungen und Workflows. Jeder Nutzer benötigt eine Microsoft 365-Lizenz (Business Standard oder höher), um die Suite vollumfänglich zu verwenden.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Welche Anpassungen sind ausserhalb der Module möglich?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Änderungen, die über den Standardumfang eines Moduls hinausgehen, werden zusätzlich verrechnet. Hierfür können Sie unsere Retainer-Modelle oder Stundenpakete nutzen. Der Einzelstundenpreis beträgt 225 €/CHF, wir bieten auch Pakete mit 10 Stunden (2.100 €/CHF) oder 20 Stunden (4.000 €/CHF) an.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Wie funktionieren die Abhängigkeiten zwischen Modulen?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Einige Module bauen aufeinander auf, damit alle Daten richtig verknüpft sind. Zum Beispiel benötigt die Zeiterfassung das Modul Mitarbeiterverwaltung. Projektstunden können nur erfasst werden, wenn sowohl Zeiterfassung als auch Projektmanagement vorhanden sind. Die Rechnungsstellung setzt die Offerten-Verwaltung voraus. Bei der Modulauswahl beraten wir Sie gerne zu den optimalen Kombinationen für Ihre Anforderungen.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Welche technischen Voraussetzungen gibt es?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Die KMUpower Suite basiert auf Microsoft 365 und der Power Platform. Jeder Nutzer benötigt eine Microsoft 365-Lizenz (Business Standard oder höher), um die Suite vollumfänglich zu verwenden. Die Lösung nutzt SharePoint für Daten und Dokumente, Teams für Zusammenarbeit und die Power Platform (Power Apps, Power Automate) für Anwendungen und Workflows. Es sind keine zusätzlichen Serverinstallationen oder komplexe IT-Infrastruktur erforderlich.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Wie läuft die Einführung der KMUpower Suite ab?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Die Einführung erfolgt in drei Schritten: 1) Analysegespräch zur Ermittlung des genauen Bedarfs und Klärung der Module. 2) Implementation des Kernpakets oder der gewünschten Add-ons. 3) Bei Bedarf individuelle Anpassungen über Retainer oder Stundenpakete. Der Einsatz des Kernpakets ist meist innerhalb von 4 Wochen möglich, wodurch Sie schnell von der Lösung profitieren können.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="section">
-    <div class="container">
-        <div class="section-title">
-            <h2>Kontaktieren Sie uns</h2>
-            <p>Vereinbaren Sie einen Termin für ein unverbindliches Beratungsgespräch oder eine Demo</p>
-        </div>
-        <!-- Replace booking iframe with attractive CTA cards -->
-        <div class="contact-options">
-            <div class="contact-card">
-                <div class="contact-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5v-5z"/></svg>
+            <div class="container">
+                <div class="section-title">
+                    <h2>Kontaktieren Sie uns</h2>
+                    <p>Vereinbaren Sie einen Termin für ein unverbindliches Beratungsgespräch oder eine Demo</p>
                 </div>
-                <h3>Terminbuchung</h3>
-                <p>Reservieren Sie einen Termin für eine persönliche Demo oder ein Beratungsgespräch in unserem Online-Kalender.</p>
-                <a href="booking.html" class="btn btn-primary">Termin vereinbaren</a>
-            </div>
-            <div class="contact-card">
-                <div class="contact-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg>
+                <!-- Contact options with CTA cards -->
+                <div class="contact-options">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5v-5z"/></svg>
+                        </div>
+                        <h3>Terminbuchung</h3>
+                        <p>Reservieren Sie einen Termin für eine persönliche Demo oder ein Beratungsgespräch in unserem Online-Kalender.</p>
+                        <a href="booking.html" class="btn btn-primary">Termin vereinbaren</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 1.99 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg>
+                        </div>
+                        <h3>E-Mail Anfrage</h3>
+                        <p>Senden Sie uns eine E-Mail mit Ihren Fragen oder Anliegen. Wir antworten innerhalb eines Werktages.</p>
+                        <a href="mailto:powersuite@thepoweraddicts.ch" class="btn btn-outline">E-Mail senden</a>
+                    </div>
                 </div>
-                <h3>E-Mail Anfrage</h3>
-                <p>Senden Sie uns eine E-Mail mit Ihren Fragen oder Anliegen. Wir antworten innerhalb eines Werktages.</p>
-                <a href="mailto:powersuite@thepoweraddicts.ch" class="btn btn-outline">E-Mail senden</a>
             </div>
-        </div>
-    </div>
-</section>
-
+        </section>
     </main>
 
     <footer>
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-column">
-                <a href="#" class="footer-logo">KMU<span>power</span> Suite</a>
-                <p class="footer-description">Modulare Businesslösungen, die auf die Bedürfnisse von KMUs zugeschnitten sind. Steigern Sie Ihre Effizienz und Wettbewerbsfähigkeit.</p>
-            </div>
-            <div class="footer-column">
-                <h4>Produkte</h4>
-                <div class="products-grid">
-                    <div>
-                        <ul class="footer-links">
-                            <li><a href="#features">CRM</a></li>
-                            <li><a href="#features">Mailing</a></li>
-                            <li><a href="#features">Stundenerfassung</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="footer-links">
-                            <li><a href="#features">Projektmanagement</a></li>
-                            <li><a href="#features">Rechnungsstellung</a></li>
-                            <li><a href="#features">Dokumentenmanagement</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="footer-links">
-                            <li><a href="#features">Personalverwaltung</a></li>
-                            <li><a href="#features">Aufgabenverwaltung</a></li>
-                            <li><a href="#pricing">Preisgestaltung</a></li>
-                        </ul>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column"></div>
+                    <a href="#" class="footer-logo">KMU<span>power</span> Suite</a>
+                    <p class="footer-description">Modulare Businesslösungen, die auf die Bedürfnisse von KMUs zugeschnitten sind. Steigern Sie Ihre Effizienz und Wettbewerbsfähigkeit.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Produkte</h4>
+                    <div class="products-grid">
+                        <div>
+                            <ul class="footer-links">
+                                <li><a href="#features">CRM</a></li>
+                                <li><a href="#features">Mailing</a></li>
+                                <li><a href="#features">Stundenerfassung</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="footer-links">
+                                <li><a href="#features">Projektmanagement</a></li>
+                                <li><a href="#features">Rechnungsstellung</a></li>
+                                <li><a href="#features">Dokumentenmanagement</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="footer-links">
+                                <li><a href="#features">Personalverwaltung</a></li>
+                                <li><a href="#features">Aufgabenverwaltung</a></li>
+                                <li><a href="#pricing">Preisgestaltung</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="copyright">
+                &copy; 2025 KMUpower Suite. Alle Rechte vorbehalten.
+                <p class="legal-info">KMUpower Suite ist ein Produkt von <a href="https://www.thepoweraddicts.ch" target="_blank">ThePowerAddicts.ch</a> | <a href="https://www.thepoweraddicts.ch/agb" target="_blank">AGB</a></p>
+            </div>
         </div>
-        <div class="copyright">
-            &copy; 2025 KMUpower Suite. Alle Rechte vorbehalten. 
-            <p class="legal-info">KMUpower Suite ist ein Produkt von <a href="https://www.thepoweraddicts.ch" target="_blank">ThePowerAddicts.ch</a> | <a href="https://www.thepoweraddicts.ch/agb" target="_blank">AGB</a></p>
+    </footer>
+
+    <!-- Add cookie consent banner -->
+    <div class="cookie-banner">
+        <div class="container">
+            <p>Diese Website verwendet Cookies, um Ihnen das beste Erlebnis zu bieten. <a href="privacy.html">Weitere Informationen</a></p>
+            <div class="cookie-buttons">
+                <button class="btn btn-outline btn-sm cookie-settings">Einstellungen</button>
+                <button class="btn btn-primary btn-sm cookie-accept">Akzeptieren</button>
+            </div>
         </div>
     </div>
-</footer>
 
-    <!-- Updated script tag with language detection -->
+    <!-- Add page load timing metrics for SEO -->
     <script>
-        // Check browser language and redirect if needed
-        function checkBrowserLanguage() {
-            // Only check on initial page load
-            if (!sessionStorage.getItem('languageChecked')) {
-                const userLang = navigator.language || navigator.userLanguage;
-                
-                // Set flag to prevent repeated redirects
-                sessionStorage.setItem('languageChecked', 'true');
-                
-                // If language starts with en and we're not on English page, redirect
-                if (userLang.startsWith('en') && window.location.pathname.indexOf('index-en.html') === -1) {
-                    window.location.href = 'index-en.html';
-                }
-            }
-        }
+        // Record when the page starts loading
+        window.performance.mark('pageStart');
         
-        // Run language check on page load
-        checkBrowserLanguage();
+        // Add event listener for when the page is fully loaded
+        window.addEventListener('load', function() {
+            window.performance.mark('pageLoaded');
+            window.performance.measure('pageLoadTime', 'pageStart', 'pageLoaded');
+            
+            const pageLoadTime = window.performance.getEntriesByName('pageLoadTime')[0].duration;
+            console.log('Page load time: ' + pageLoadTime + 'ms');
+            
+            // Only send analytics in production
+            if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+                // Code to send performance metrics to analytics
+            }
+        });
     </script>
-    <script src="assets/js/script.js"></script>
+    
+    <!-- Add reference to image optimization script -->
+    <script src="assets/js/image-optimization.js" defer></script>
+    <script src="assets/js/performance.js" defer></script>
+    <script src="assets/js/cookie-consent.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
 </body>
 </html>
