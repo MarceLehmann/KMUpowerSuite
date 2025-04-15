@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Robots Meta Tag for better search engine control -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <!-- Enhanced meta description with key benefits and call-to-action -->
     <meta name="description" content="KMUpower Suite: The all-in-one modular solution for SMEs based on Microsoft 365. CRM, project management, time tracking & more in one seamlessly integrated platform. Boost efficiency & competitiveness. Request demo now!">
     <!-- Updated keywords with LSI terms -->
@@ -41,9 +43,11 @@
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
       "offers": {
-        "@type": "Offer",
-        "price": "1000",
-        "priceCurrency": "EUR"
+        "@type": "AggregateOffer",
+        "lowPrice": "1000",
+        "highPrice": "7500",
+        "priceCurrency": "EUR",
+        "offerCount": "3"
       },
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -62,14 +66,26 @@
       "url": "https://www.kmupowersuite.com",
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+41-XXX-XXX-XXX",
+        "telephone": "+41764000899",
         "contactType": "customer service"
       },
       "sameAs": [
-        "https://www.facebook.com/kmupowersuite",
-        "https://www.linkedin.com/company/kmupowersuite",
-        "https://twitter.com/kmupowersuite"
-      ]
+      "https://www.linkedin.com/company/92878574"
+            ]
+    }
+    </script>
+    
+    <!-- Add WebSite schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://www.kmupowersuite.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.kmupowersuite.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
     }
     </script>
 </head>
@@ -576,7 +592,7 @@
             </div>
             <div class="contact-card">
                 <div class="contact-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 1.99 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 1.99 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5 8-5v2z"></path></svg>
                 </div>
                 <h3>Email Inquiry</h3>
                 <p>Send us an email with your questions or concerns. We will respond within one business day.</p>
@@ -629,6 +645,17 @@
     </div>
 </footer>
 
+    <!-- Add cookie consent banner -->
+    <div class="cookie-banner">
+        <div class="container">
+            <p>This website uses cookies to provide you with the best experience. <a href="privacy-en.html">More information</a></p>
+            <div class="cookie-buttons">
+                <button class="btn btn-outline btn-sm cookie-settings">Settings</button>
+                <button class="btn btn-primary btn-sm cookie-accept">Accept</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Script with language detection -->
     <script>
         // Check browser language and redirect if needed
@@ -651,7 +678,6 @@
         // Run language check on page load
         checkBrowserLanguage();
     </script>
-    <!-- Remove duplicate script.js reference -->
     
     <!-- Add page load timing metrics for SEO -->
     <script>
@@ -675,6 +701,8 @@
     
     <!-- Add reference to image optimization script -->
     <script src="assets/js/image-optimization.js" defer></script>
+    <script src="assets/js/performance.js" defer></script>
+    <script src="assets/js/cookie-consent.js" defer></script>
     <script src="assets/js/script.js" defer></script>
 </body>
 </html>

@@ -8,6 +8,7 @@ class CookieConsent {
         this.acceptButton = document.querySelector('.cookie-accept');
         this.settingsButton = document.querySelector('.cookie-settings');
         this.consentCookie = 'kmups_cookie_consent';
+        this.language = document.documentElement.lang || 'de';
         
         this.init();
     }
@@ -60,8 +61,14 @@ class CookieConsent {
     
     showSettings() {
         // In a real implementation, this would open a modal with detailed settings
-        // For simplicity, we'll just create and show an alert
-        alert('In der vollständigen Version würde hier ein Modal mit detaillierten Cookie-Einstellungen erscheinen.');
+        // For language-specific messages
+        let message = 'In der vollständigen Version würde hier ein Modal mit detaillierten Cookie-Einstellungen erscheinen.';
+        
+        if (this.language === 'en') {
+            message = 'In the full version, a modal with detailed cookie settings would appear here.';
+        }
+        
+        alert(message);
     }
     
     activateServices() {

@@ -274,9 +274,12 @@ function showPromoBanner(content) {
 
 // Function to add schema markup dynamically
 function addSchemaMarkup() {
-    // Add FAQPage schema
-    const faqItems = document.querySelectorAll('.faq-item');
-    if (faqItems.length > 0) {
+    // Check if FAQPage schema already exists in the document
+    const existingFAQSchema = document.querySelector('script[type="application/ld+json"]')?.textContent.includes('"@type":"FAQPage"');
+    
+    // Only add FAQPage schema if it doesn't already exist
+    if (!existingFAQSchema && document.querySelectorAll('.faq-item').length > 0) {
+        const faqItems = document.querySelectorAll('.faq-item');
         const faqSchema = {
             "@context": "https://schema.org",
             "@type": "FAQPage",
