@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover">
     <!-- Robots Meta Tag für bessere Suchmaschinensteuerung -->
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <!-- Improved meta description - shorter & more action-oriented -->
@@ -118,6 +118,15 @@
                 <div class="nav-container">
                     <ul class="nav-links">
                         <li><a href="#features">Features</a></li>
+                        <li class="dropdown">
+                            <a href="#features" class="dropdown-toggle">Module</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="crm.html">CRM</a></li>
+                                <li><a href="mailing.html">Mailing & Newsletter</a></li>
+                                <li><a href="mitarbeiterverwaltung.html">Mitarbeiterverwaltung</a></li>
+                                <li><a href="#features">Weitere Module</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#pricing">Preise</a></li>
                         <li><a href="#support">Support</a></li>
                         <li><a href="#faq">FAQ</a></li>
@@ -167,25 +176,34 @@
                             <div class="feature-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"/></svg>
                             </div>
-                            <!-- Keyword-enhanced heading -->
-                            <h3>CRM für KMU (Kundenverwaltung)</h3>
+                            <!-- Hinzugefügter Link zur CRM-Landingpage -->
+                            <a href="crm.html" class="module-link">
+                                <h3>CRM für KMU (Kundenverwaltung)</h3>
+                            </a>
                             <!-- More detailed, keyword-rich description -->
                             <p>Verwalten Sie Kunden-, Interessenten- und Lieferantendaten zentral in unserem KMU-optimierten CRM-System. Mit intelligenter Kontakt-Kategorisierung, Verkaufspipeline und 360°-Kundenansicht. Bildet die Grundlage für Rechnungsstellung, Mailing-Kampagnen und Support.</p>
                             <div class="module-options">
                                 <span class="optional-module">+ Optional: Offerten-Verwaltung mit PDF-Export</span>
                                 <span class="optional-module">+ Optional: Gesprächs-/E-Mail-Historie für lückenlose Kundenkommunikation</span>
                             </div>
+                            <!-- Hinzugefügter "Mehr erfahren" Button -->
+                            <a href="crm.html" class="btn btn-sm btn-outline module-more">Mehr erfahren</a>
                         </div>
                         
                         <div class="feature-card">
                             <div class="feature-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 1.99 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg>
                             </div>
-                            <h3>Mailing/Newsletter</h3>
+                            <!-- Hinzugefügter Link zur Mailing-Landingpage -->
+                            <a href="mailing.html" class="module-link">
+                                <h3>Mailing/Newsletter</h3>
+                            </a>
                             <p>Versenden Sie Newsletter oder Aktions-E-Mails an definierte Empfängergruppen. Mit CRM-Integration zur effektiven Nutzung von Kundensegmenten für systematisches Marketing und höhere Kundenbindung.</p>
                             <div class="module-options">
                                 <span class="optional-module">+ Optional: Sequenzmails (automatisierte E-Mail-Strecken)</span>
                             </div>
+                            <!-- Hinzugefügter "Mehr erfahren" Button -->
+                            <a href="mailing.html" class="btn btn-sm btn-outline module-more">Mehr erfahren</a>
                         </div>
                         
                         <div class="feature-card">
@@ -206,14 +224,19 @@
                     <div class="features-grid">
                         <div class="feature-card">
                             <div class="feature-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"></path></svg>
                             </div>
-                            <h3>Zeiterfassung</h3>
+                            <!-- Hinzugefügter Link zur Zeiterfassungs-Landingpage -->
+                            <a href="zeiterfassung.html" class="module-link">
+                                <h3>Zeiterfassung</h3>
+                            </a>
                             <p>Erfassen Sie Arbeitszeiten (Ein-/Ausbuchung) und Pausen präzise.</p>
                             <div class="module-dependencies">
                                 <span class="required-module">Voraussetzung: Mitarbeiterverwaltung</span>
                                 <span class="info-note">Hinweis: Für Projektstunden wird zusätzlich das Projektmanagement-Modul benötigt</span>
                             </div>
+                            <!-- Hinzugefügter "Mehr erfahren" Button -->
+                            <a href="zeiterfassung.html" class="btn btn-sm btn-outline module-more">Mehr erfahren</a>
                         </div>
                         
                         <div class="feature-card">
@@ -241,7 +264,7 @@
                         
                         <div class="feature-card">
                             <div class="feature-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 1.99 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 22l4-4h14c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"></path></svg>
                             </div>
                             <h3>Spesenabrechnung</h3>
                             <p>Erfassen von Belegen und implementieren eines Freigabe-Workflows für effizientes Spesenmanagement.</p>
@@ -345,7 +368,7 @@
                     <div class="pricing-card">
                         <div class="pricing-header">
                             <h3 class="pricing-title">Einzelmodul</h3>
-                            <div class="pricing-price">1.000 €/CHF<span>einmalig</span></div>
+                            <div class="pricing-price">1'000 €/CHF<span>einmalig</span></div>
                         </div>
                         <ul class="pricing-features">
                             <li>1 Modul Ihrer Wahl</li>
@@ -363,7 +386,7 @@
                     <div class="pricing-card featured">
                         <div class="pricing-header">
                             <h3 class="pricing-title">Kernpaket (3 Module)</h3>
-                            <div class="pricing-price" data-onetime="2.222 €/CHF<span>einmalig</span>" data-subscription="300 €/CHF<span>monatlich</span>">2.222 €/CHF<span>einmalig</span></div>
+                            <div class="pricing-price" data-onetime="2'222 €/CHF<span>einmalig</span>" data-subscription="300 €/CHF<span>monatlich</span>">2'222 €/CHF<span>einmalig</span></div>
                         </div>
                         <ul class="pricing-features">
                             <li>CRM, Mailing und Mitarbeiterverwaltung</li>
@@ -458,7 +481,7 @@
                     <div class="pricing-card">
                         <div class="pricing-header">
                             <h3 class="pricing-title">Premium Retainer</h3>
-                            <div class="pricing-price">1.520 €/CHF<span>monatlich</span></div>
+                            <div class="pricing-price">1'520 €/CHF<span>monatlich</span></div>
                         </div>
                         <ul class="pricing-features">
                             <li>8 Stunden Support pro Monat</li>
@@ -562,7 +585,7 @@
                             <span>+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>Mit unseren Support & Wartungsverträgen (Retainer) sichern Sie sich nicht nur garantierte Reaktionszeiten und Support-Stunden, sondern profitieren bei den Basic- und Pro-Paketen auch von vergünstigten Preisen für zusätzliche Module (300 €/CHF statt gestaffelt bis 500 €/CHF). Im Premium-Paket sind zusätzliche Module sogar kostenlos. Wir stellen sicher, dass Ihre Anwendungen stets reibungslos laufen.</p>
+                            <p>Mit unseren Support & Wartungsverträgen (Retainer) sichern Sie sich garantierte Reaktionszeiten und Support-Stunden. Im Premium-Paket sind zusätzliche Module sogar kostenlos. Wir stellen sicher, dass Ihre Anwendungen stets reibungslos laufen und unterstützen Sie bei der kontinuierlichen Optimierung Ihrer Prozesse.</p>
                         </div>
                     </div>
                     <div class="faq-item">
@@ -571,7 +594,7 @@
                             <span>+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>Ja, Sie können jederzeit weitere Module zu Ihrer bestehenden KMUpower Suite hinzufügen. Die Preise sind gestaffelt: Das 1. Modul kostet 1.000 €/CHF, das 2. 900 €/CHF, ..., ab dem 6. Modul je 500 €/CHF. Wenn Sie einen Basic- oder Pro-Wartungsvertrag haben, zahlen Sie für jedes zusätzliche Modul nur 300 €/CHF. Mit dem Premium-Retainer sind zusätzliche Module kostenlos.</p>
+                            <p>Ja, Sie können jederzeit weitere Module zu Ihrer bestehenden KMUpower Suite hinzufügen. Die Preise sind gestaffelt: Das 1. Modul kostet 1.000 €/CHF, das 2. 900 €/CHF, ..., ab dem 6. Modul je 500 €/CHF. Bei allen Wartungsverträgen (Basic, Pro) außer dem Premium-Paket kosten zusätzliche Module 500 €/CHF je Modul. Mit dem Premium-Retainer sind zusätzliche Module kostenlos.</p>
                         </div>
                     </div>
                     <div class="faq-item">
@@ -673,9 +696,9 @@
                     <div class="products-grid">
                         <div>
                             <ul class="footer-links">
-                                <li><a href="#features">CRM</a></li>
-                                <li><a href="#features">Mailing</a></li>
-                                <li><a href="#features">Stundenerfassung</a></li>
+                                <li><a href="crm.html">CRM</a></li>
+                                <li><a href="mailing.html">Mailing</a></li>
+                                <li><a href="mitarbeiterverwaltung.html">Mitarbeiterverwaltung</a></li>
                             </ul>
                         </div>
                         <div>

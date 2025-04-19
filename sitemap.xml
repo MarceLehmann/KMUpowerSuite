@@ -2,15 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Hauptseiten -->
   <url>
     <loc>https://www.kmupowersuite.com/index.html</loc>
-    <lastmod>2025-04-15</lastmod>
+    <lastmod>2025-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <!-- Language alternatives -->
     <xhtml:link rel="alternate" hreflang="de" href="https://www.kmupowersuite.com/index.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kmupowersuite.com/index-en.html"/>
-    <!-- Add image information -->
     <image:image>
       <image:loc>https://www.kmupowersuite.com/assets/images/Logo_KMUpowerSuite.webp</image:loc>
       <image:title>KMUpower Suite Logo</image:title>
@@ -19,15 +18,43 @@
   </url>
   <url>
     <loc>https://www.kmupowersuite.com/index-en.html</loc>
-    <lastmod>2025-04-15</lastmod>
+    <lastmod>2025-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.kmupowersuite.com/index.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kmupowersuite.com/index-en.html"/>
   </url>
+  
+  <!-- Hauptmodule/Produktseiten -->
+  <url>
+    <loc>https://www.kmupowersuite.com/crm.html</loc>
+    <lastmod>2025-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.kmupowersuite.com/crm.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kmupowersuite.com/crm-en.html"/>
+  </url>
+  <url>
+    <loc>https://www.kmupowersuite.com/mailing.html</loc>
+    <lastmod>2025-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.kmupowersuite.com/mailing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kmupowersuite.com/mailing-en.html"/>
+  </url>
+  <url>
+    <loc>https://www.kmupowersuite.com/mitarbeiterverwaltung.html</loc>
+    <lastmod>2025-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.kmupowersuite.com/mitarbeiterverwaltung.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kmupowersuite.com/mitarbeiterverwaltung-en.html"/>
+  </url>
+  
+  <!-- Service-Seiten -->
   <url>
     <loc>https://www.kmupowersuite.com/booking.html</loc>
-    <lastmod>2025-04-15</lastmod>
+    <lastmod>2025-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.kmupowersuite.com/booking.html"/>
@@ -35,16 +62,28 @@
   </url>
   <url>
     <loc>https://www.kmupowersuite.com/booking-en.html</loc>
-    <lastmod>2025-04-15</lastmod>
+    <lastmod>2025-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.kmupowersuite.com/booking.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.kmupowersuite.com/booking-en.html"/>
   </url>
+  
+  <!-- Rechtliche Seiten -->
   <url>
-    <loc>https://www.kmupowersuite.com/privacy.html</loc>
-    <lastmod>2025-04-15</lastmod>
+    <loc>https://www.kmupowersuite.com/imprint.html</loc>
+    <lastmod>2025-04-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.kmupowersuite.com/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kmupowersuite.com/imprint-en.html"/>
+  </url>
+  <url>
+    <loc>https://www.kmupowersuite.com/imprint-en.html</loc>
+    <lastmod>2025-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.kmupowersuite.com/imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kmupowersuite.com/imprint-en.html"/>
   </url>
 </urlset>

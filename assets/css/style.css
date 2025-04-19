@@ -255,8 +255,8 @@ header {
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
 }
 
 .feature-card {
@@ -267,7 +267,7 @@ header {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    min-height: 290px;
+    min-height: 320px;
     border-bottom: 3px solid transparent;
 }
 
@@ -290,9 +290,9 @@ header {
 }
 
 .feature-icon svg {
-    width: 30px;
-    height: 30px;
-    fill: var(--primary);
+    width: 48px; /* Standardgröße für Symbole */
+    height: 48px;
+    fill: currentColor; /* Farbe von Text übernehmen */
 }
 
 .feature-card h3 {
@@ -322,14 +322,64 @@ header {
 .pricing-card {
     background-color: var(--light);
     border-radius: 16px;
-    padding: 3rem 2rem;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    text-align: center;
-    position: relative;
+    padding: 2.5rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.04);
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    min-height: 550px;
+}
+
+.pricing-card .feature-header {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.pricing-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+}
+
+.pricing-card .price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+.pricing-card .price-subtitle {
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.pricing-card .feature-content {
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.pricing-card .feature-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-card .feature-content li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.pricing-card .feature-content li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.pricing-card .feature-footer {
+    margin-top: auto;
+    text-align: center;
 }
 
 .pricing-card.featured {
@@ -410,6 +460,16 @@ header {
 
 .pricing-card .btn {
     margin-top: auto;
+}
+
+.pricing-note, .support-note {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: var(--text);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Pricing toggle */
@@ -743,9 +803,56 @@ footer {
     min-width: 200px;
 }
 
+/* Support Cards Styling */
+.support-card {
+    background-color: var(--light);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.support-card .feature-header {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.support-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+}
+
+.support-card .price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+.support-card .feature-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.support-card .feature-content li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.support-card .feature-content li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
 /* Module Sections Styling */
 .module-section {
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
+    padding: 0 1rem;
 }
 
 .module-section-title {
@@ -795,8 +902,8 @@ footer {
 .technical-foundation {
     background-color: var(--gray);
     border-radius: 16px;
-    padding: 2rem;
-    margin-top: 3rem;
+    padding: 3rem;
+    margin: 4rem 0;
 }
 
 .tech-container {
@@ -880,10 +987,11 @@ footer {
 .testimonial-card {
     background-color: var(--light);
     border-radius: 16px;
-    padding: 2rem;
+    padding: 2.5rem;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 .testimonial-content {
@@ -1363,6 +1471,39 @@ img.loaded {
         top: -1.5rem;
         left: -0.5rem;
     }
+    
+    .module-section {
+        padding: 0 0.5rem;
+    }
+    
+    .feature-card, 
+    .testimonial-card,
+    .technical-foundation {
+        padding: 1.8rem;
+    }
+    
+    .tech-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .module-section-title {
+        font-size: 1.6rem;
+    }
+    
+    .hero h1 {
+        font-size: 2.4rem;
+        line-height: 1.3;
+    }
+    
+    .pricing-card, .support-card {
+        padding: 1.8rem;
+    }
+    
+    .pricing-card .price, 
+    .support-card .price {
+        font-size: 1.6rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1431,4 +1572,117 @@ img.loaded {
 
 strong {
     font-weight: 700;
+}
+
+/* Dropdown Menu CSS */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    position: relative;
+    padding-right: 1.2rem;
+}
+
+.dropdown-toggle::after {
+    content: '▼';
+    font-size: 0.7em;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--light);
+    border-radius: 8px;
+    padding: 0.8rem 0;
+    min-width: 200px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown:hover .dropdown-toggle::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.dropdown-menu li {
+    display: block;
+    margin: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1.5rem;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--gray);
+}
+
+/* Module Card Link Styling */
+.module-link {
+    text-decoration: none;
+    color: var(--dark);
+    transition: color 0.3s ease;
+}
+
+.module-link:hover {
+    color: var(--primary);
+}
+
+.module-more {
+    margin-top: 1rem;
+    align-self: flex-start;
+}
+
+/* Mobile dropdown adjustments */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background-color: var(--gray);
+        margin-top: 0.5rem;
+        border-radius: 8px;
+        padding: 0.5rem 0;
+        display: none;
+    }
+    
+    .dropdown.open .dropdown-menu {
+        display: block;
+    }
+    
+    .dropdown-toggle::after {
+        right: auto;
+        margin-left: 0.5rem;
+    }
+}
+
+/* Class for consistent highlight style */
+.highlighted {
+    border: 2px solid var(--primary);
+    box-shadow: 0 15px 35px rgba(72, 224, 209, 0.15);
+}
+
+/* Fix for nested container issue */
+.module-section .container {
+    padding: 0;
 }
