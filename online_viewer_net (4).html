@@ -1,0 +1,180 @@
+<!DOCTYPE html><html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KMUpower Suite – Prozesse digitalisieren & Umsatz steigern</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- External Libraries -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <style>
+    :root { --brand:#38c9c3; --dark:#0f1d21; }
+    .brand{color:var(--brand);} .bg-brand{background-color:var(--brand);} .btn-brand{background-color:var(--brand);color:#fff;}
+    .btn-brand:hover{background-color:#2baaa4;}
+    .floating-cta{position:fixed;bottom:1.2rem;right:1.2rem;z-index:60;}
+    /* Glassmorphism cards */
+    .glass{background:rgba(255,255,255,.15);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.2);}    
+    /* Cursor */
+    body {cursor:url("data:image/svg+xml,%3Csvg width='32' height='32' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='16' cy='16' r='6' fill='%2338c9c3'/%3E%3C/svg%3E") 16 16, auto;}
+    /* Swiper overrides */
+    .swiper-pagination-bullet-active{background:var(--brand);}    
+    /* Typing effect */
+    .typing::after{content:'|';animation:blink 1s infinite;}@keyframes blink{50%{opacity:0;}}
+  </style>
+</head>
+<body class="font-sans antialiased text-white bg-[linear-gradient(135deg,_#071014_0%,_#122b31_100%)] leading-relaxed">
+  <!-- Floating CTA -->
+  <a href="#kontakt" class="floating-cta btn-brand px-6 py-3 rounded-full shadow-xl shadow-brand/40 hover:scale-110 transition-transform">Demo buchen</a>  <!-- Hero ------------------------------------------------------------>  <section id="hero" class="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
+    <!-- Particles BG -->
+    <div id="tsparticles" class="absolute inset-0 -z-10"></div>
+    <div class="relative z-10 max-w-5xl px-6" data-aos="fade-up">
+      <h1 class="typing text-5xl md:text-6xl font-extrabold mb-6 leading-tight" id="typed" data-phrases='["Nutze dein Microsoft 365 \u2014 nicht nur Outlook","Digitalisiere Prozesse in Tagen, nicht Monaten","CRM, Zeiterfassung, Rechnung & Co."]'></h1>
+      <p class="text-xl md:text-2xl mb-10">Die <span class="brand font-bold">KMUpower Suite</span> macht Schluss mit Excel‑Chaos und schenkt deinem Team jede Woche Stunden zurück.</p>
+      <a href="#kontakt" class="btn-brand px-10 py-4 rounded-xl text-lg shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transition-transform">Kostenlose Demo vereinbaren</a>
+      <p class="mt-4 text-sm opacity-80">Keine Kreditkarte & kein Risiko</p>
+    </div>
+  </section>  <!-- Social Proof Banner -------------------------------------------->  <section class="bg-white/10 py-4" data-aos="fade-right">
+    <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-8 opacity-80 px-6">
+      <img src="assets/logo-client1.svg" alt="Logo 1" class="h-10" />
+      <img src="assets/logo-client2.svg" alt="Logo 2" class="h-10" />
+      <img src="assets/logo-client3.svg" alt="Logo 3" class="h-10" />
+      <img src="assets/logo-client4.svg" alt="Logo 4" class="h-10" />
+    </div>
+  </section>  <!-- Pain Intro ------------------------------------------------------>  <section class="py-24" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-6">Verwaltest du <span class="brand font-extrabold">Kundendaten noch in Excel</span>?</h2>
+      <p class="text-lg max-w-3xl mx-auto">Jede falsch kopierte Zelle kostet Zeit, Geld & Nerven. Höchste Zeit für ein Tool, das mit dir wächst – ohne IT‑Abteilung.</p>
+    </div>
+  </section>  <!-- Module Grid ----------------------------------------------------->  <section id="module" class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-12 text-center" data-aos="zoom-in">Alles, was dein KMU braucht – <span class="brand">in einer Suite</span></h2>
+      <div class="grid gap-10 md:grid-cols-3" data-aos="fade-up">
+        <!-- Kachel 1 -->
+        <div class="glass p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-shadow" data-tilt>
+          <img src="assets/crm.svg" alt="CRM Icon" class="h-14 mb-6 mx-auto" />
+          <h3 class="font-semibold text-2xl mb-3">CRM für KMU</h3>
+          <p>Kundenreisen im Griff: Leads, Angebote, Aufträge – alles ordentlich dokumentiert.</p>
+        </div>
+        <!-- Kachel 2 -->
+        <div class="glass p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-shadow" data-tilt>
+          <img src="assets/time.svg" alt="Zeiterfassung Icon" class="h-14 mb-6 mx-auto" />
+          <h3 class="font-semibold text-2xl mb-3">Zeiterfassung</h3>
+          <p>Ein Klick – gebuchte Stunden landen automatisch auf der Rechnung.</p>
+        </div>
+        <!-- Kachel 3 -->
+        <div class="glass p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-shadow" data-tilt>
+          <img src="assets/invoice.svg" alt="Rechnung Icon" class="h-14 mb-6 mx-auto" />
+          <h3 class="font-semibold text-2xl mb-3">Rechnung & Finanzen</h3>
+          <p>E‑Rechnungen, Mahnwesen & DATEV‑Export – ready für dein Treuhandbüro.</p>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Stats ----------------------------------------------------------->  <section class="py-24" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-center">
+      <div>
+        <span class="text-6xl font-extrabold brand stat" data-count="8">0</span>
+        <p class="font-semibold">Stunden&nbsp;/ Woche gespart</p>
+      </div>
+      <div>
+        <span class="text-6xl font-extrabold brand stat" data-count="3">0</span>
+        <p class="font-semibold">x schnellere Angebotserstellung</p>
+      </div>
+      <div>
+        <span class="text-6xl font-extrabold brand stat" data-count="5">0</span>
+        <p class="font-semibold">Tage bis zum Go‑Live</p>
+      </div>
+    </div>
+  </section>  <!-- ROI Calculator -------------------------------------------------->  <section id="roi" class="py-24 bg-white/10" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-8 text-center">Mini‑Kalkulation: Was kostet dich Excel?</h2>
+      <div class="glass p-10 rounded-3xl shadow-xl">
+        <div class="grid md:grid-cols-3 gap-6">
+          <label class="block">Mitarbeitende<br/><input type="number" id="emp" class="mt-1 w-full p-3 rounded-md text-gray-900" placeholder="5" value="5"></label>
+          <label class="block">Ø Stundenlohn (CHF)<br/><input type="number" id="rate" class="mt-1 w-full p-3 rounded-md text-gray-900" placeholder="50" value="50"></label>
+          <label class="block">Minuten Excel‑Chaos / Woche<br/><input type="number" id="mins" class="mt-1 w-full p-3 rounded-md text-gray-900" placeholder="75" value="75"></label>
+        </div>
+        <button onclick="calcROI()" class="btn-brand mt-6 px-8 py-3 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-0.5 transition-transform">Kosten berechnen</button>
+        <p id="roi-result" class="text-2xl font-semibold mt-6 hidden"></p>
+      </div>
+    </div>
+  </section>  <!-- Testimonials Slider -------------------------------------------->  <section id="testimonials" class="py-24" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-12">Erfolgsgeschichten</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide p-10 glass rounded-3xl">
+            <blockquote class="italic text-lg leading-relaxed">„Seit wir die KMUpower Suite einsetzen, sparen wir pro Woche 8 Stunden Verwaltungszeit. Unsere Angebotserstellung ist jetzt 3× schneller.“</blockquote>
+            <p class="mt-6 font-semibold">– M. Huber, Malerbetrieb Huber AG</p>
+          </div>
+          <div class="swiper-slide p-10 glass rounded-3xl">
+            <blockquote class="italic text-lg leading-relaxed">„Das Go‑Live war in 3 Tagen erledigt. Unser Team liebt die intuitive Oberfläche.“</blockquote>
+            <p class="mt-6 font-semibold">– L. Meier, Ingenieurbüro Meier</p>
+          </div>
+        </div>
+        <div class="swiper-pagination mt-8"></div>
+      </div>
+    </div>
+  </section>  <!-- FAQ ------------------------------------------------------------->  <section id="faq" class="py-24 bg-white/10" data-aos="fade-up">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-12 text-center">Häufige Fragen</h2>
+      <div class="space-y-6">
+        <details class="glass p-6 rounded-2xl shadow">
+          <summary class="font-semibold cursor-pointer">Ist das auch für kleine Firmen geeignet?</summary>
+          <p class="mt-3 text-sm">Ja – ab 3 Usern bist du dabei. Du kannst mit einem Modul starten und später erweitern.</p>
+        </details>
+        <details class="glass p-6 rounded-2xl shadow">
+          <summary class="font-semibold cursor-pointer">Wie schnell bin ich live?</summary>
+          <p class="mt-3 text-sm">Unsere Best‑Practice‑Templates bringen dich in unter 5 Tagen ans Ziel.</p>
+        </details>
+        <details class="glass p-6 rounded-2xl shadow">
+          <summary class="font-semibold cursor-pointer">Welche Lizenzen brauche ich?</summary>
+          <p class="mt-3 text-sm">Ein Microsoft 365‑Tenant mit Power Platform – fertig. Wir prüfen gerne deinen Bestand.</p>
+        </details>
+      </div>
+    </div>
+  </section>  <!-- Contact CTA ----------------------------------------------------->  <section id="kontakt" class="py-32 bg-brand text-white text-center" data-aos="zoom-in">
+    <div class="max-w-xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-4">Bereit, Zeit & Geld zu sparen?</h2>
+      <p class="mb-10">Buche deine kostenlose Live‑Demo – unverbindlich & persönlich.</p>
+      <form class="grid gap-4 text-gray-900">
+        <input type="text" placeholder="Name" class="p-4 rounded-lg" required />
+        <input type="email" placeholder="E‑Mail" class="p-4 rounded-lg" required />
+        <textarea placeholder="Nachricht (optional)" rows="3" class="p-4 rounded-lg"></textarea>
+        <button type="submit" class="btn-brand px-6 py-4 rounded-xl text-lg shadow-lg hover:shadow-2xl hover:-translate-y-0.5 transition-transform">Demo anfragen</button>
+      </form>
+      <p class="text-xs mt-4 opacity-90">100 % DSGVO‑konform · Kein Spam</p>
+    </div>
+  </section>  <!-- Footer ---------------------------------------------------------->  <footer class="py-10 bg-[#071014] text-gray-400 text-center">
+    <p class="text-sm">© 2025 KMUpower Suite – Ein Service von ThePowerAddicts.ch&nbsp;·&nbsp;<a href="#" class="hover:text-white underline">Impressum</a></p>
+  </footer>  <!-- Scripts -->  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.3/vanilla-tilt.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.1.0/tsparticles.bundle.min.js"></script>  <script>
+    AOS.init({ once:true, duration:800 });
+    // Particles
+    tsParticles.load("tsparticles",{"particles":{"number":{"value":40},"size":{"value":2},"move":{"speed":1},"links":{"enable":true,"color":"#38c9c3"},"color":{"value":"#38c9c3"}}});
+    // Typed headline
+    const el=document.getElementById('typed');
+    const phrases=JSON.parse(el.getAttribute('data-phrases'));
+    let i=0, j=0, deleting=false;
+    function type(){
+      const current=phrases[i];
+      el.textContent=deleting?current.slice(0,--j):current.slice(0,++j);
+      if(!deleting&&j===current.length){setTimeout(()=>deleting=true,1500);} else if(deleting&&j===0){deleting=false;i=(i+1)%phrases.length;}
+      setTimeout(type,deleting?40:90);
+    } type();
+    // Counters
+    const counters=document.querySelectorAll('.stat');
+    const counterObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){animate(entry.target);counterObserver.unobserve(entry.target);}});},{threshold:0.8});
+    counters.forEach(c=>counterObserver.observe(c));
+    function animate(el){const target=+el.dataset.count;let n=0;const step=Math.ceil(target/60);const inc=()=>{n+=step;if(n>target)n=target;el.textContent=n; if(n<target)requestAnimationFrame(inc);} ; inc();}
+    // Swiper testimonials
+    new Swiper('.swiper',{loop:true,autoplay:{delay:5000},pagination:{el:'.swiper-pagination',clickable:true}});
+    // ROI calculator
+    function calcROI(){
+      const emp=+document.getElementById('emp').value||0;const rate=+document.getElementById('rate').value||0;const mins=+document.getElementById('mins').value||0;
+      const yearly=((emp*rate*mins*52)/60).toFixed(0);
+      const res=document.getElementById('roi-result');
+      res.textContent=`Excel kostet dich derzeit ca. CHF ${yearly} pro Jahr.`;
+      res.classList.remove('hidden');
+    }
+  </script></body>
+</html>
