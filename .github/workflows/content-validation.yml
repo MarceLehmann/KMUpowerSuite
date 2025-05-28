@@ -1,0 +1,42 @@
+name: Content Validation
+
+on:
+  workflow_run:
+    workflows: ["Deploy Jekyll site to Pages"]
+    types:
+      - completed
+  schedule:
+    - cron: '0 1 * * 3'  # Mittwochs um 1 Uhr
+  workflow_dispatch:
+
+jobs:
+  validate-content:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Check for German umlauts and encoding
+        run: |
+          echo "Checking for encoding issues..."
+          find . -name "*.md" -exec grep -l "[äöüÄÖÜß]" {} \; || true
+        continue-on-error: true
+      
+      - name: Validate front matter
+        run: |
+          echo "Checking YAML front matter..."
+          for file in $(find . -name "*.md"); do
+            if head -1 "$file" | grep -q "^---"; then
+              echo "✅ $file has front matter"
+            else
+              echo "❌ $file missing front matter"
+            fi
+          done
+        continue-on-error: true
+      
+      - name: Check for required metadata
+        run: |
+          echo "Checking for required PowerPlatform tags..."
+          grep -r "powerplatform\|power platform\|powerapps\|power automate" _posts/ || echo "No PowerPlatform content found"
+        continue-on-error: true

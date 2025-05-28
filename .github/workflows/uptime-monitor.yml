@@ -8,7 +8,16 @@ on:
 jobs:
   uptime-check:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - name: Check website availability
+        id: check
         run: |
-          curl -s -o /dev/null -w "%{http_code}" https://www.kmupowersuite.com/ | grep -E '200|201|301|302'
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://www.kmupowersuite.com/)
+          echo "Status: $STATUS"
+          if [[ "$STATUS" =~ ^(200|201|301|302)$ ]]; then
+            echo "✅ Website is UP ($STATUS)"
+          else
+            echo "❌ Website is DOWN ($STATUS)"
+            exit 1
+          fi

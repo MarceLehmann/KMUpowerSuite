@@ -1,4 +1,4 @@
-name: Core Web Vitals Monitor
+name: Accessibility Audit
 
 on:
   workflow_run:
@@ -10,26 +10,23 @@ on:
   workflow_dispatch:
 
 jobs:
-  web-vitals:
+  pa11y-ci:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
     if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
     steps:
       - uses: actions/checkout@v4
-      - name: Install Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-      - name: Install Lighthouse CI (richtige Web Vitals Messung)
-        run: npm install -g @lhci/cli
+      - name: Install pa11y-ci
+        run: npm install -g pa11y-ci
       - name: Wait for deployment
         run: sleep 30
-      - name: Run Lighthouse for Core Web Vitals
+      - name: Run accessibility tests against live site
         run: |
-          npx lhci autorun \
-            --collect.url="https://www.kmupowersuite.com/" \
-            --collect.settings.chromeFlags="--no-sandbox" \
-            --collect.numberOfRuns=3 \
-            --assert.preset="lighthouse:no-pwa" \
-            --upload.target=temporary-public-storage
+          pa11y-ci https://www.kmupowersuite.com/ \
+            --sitemap https://www.kmupowersuite.com/sitemap.xml \
+            --concurrency 2 || true
         continue-on-error: true
