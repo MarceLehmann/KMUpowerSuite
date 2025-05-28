@@ -30,6 +30,6 @@ jobs:
       - name: Run Lighthouse CI against live site
         run: |
           npx lhci autorun \
-            --collect.url="https://www.powerplatformtip.com" \
+            --collect.url="https://www.kmupowersuite.com/" \
             --upload.target=temporary-public-storage
         continue-on-error: true

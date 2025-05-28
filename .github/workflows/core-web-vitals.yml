@@ -30,7 +30,7 @@ jobs:
       - name: Run Lighthouse for Core Web Vitals
         run: |
           npx lhci autorun \
-            --collect.url="https://www.powerplatformtip.com" \
+            --collect.url="https://www.kmupowersuite.com/" \
             --collect.settings.chromeFlags="--no-sandbox" \
             --collect.numberOfRuns=3 \
             --assert.preset="lighthouse:no-pwa" \

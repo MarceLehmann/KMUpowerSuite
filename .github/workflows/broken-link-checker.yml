@@ -33,6 +33,6 @@ jobs:
             --exclude ".*bsky\.app.*"
             --no-progress
             --verbose
-            https://www.powerplatformtip.com
+            https://www.kmupowersuite.com/
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -29,6 +29,6 @@ jobs:
       
       - name: Run accessibility tests against live site
         run: |
-          pa11y-ci https://www.powerplatformtip.com \
-            --sitemap https://www.powerplatformtip.com/sitemap.xml \
+          pa11y-ci https://www.kmupowersuite.com/ \
+            --sitemap https://www.kmupowersuite.com/sitemap.xml \
             --concurrency 2 || true

@@ -23,12 +23,12 @@ jobs:
       
       - name: Check meta tags
         run: |
-          curl -s https://www.powerplatformtip.com | grep -i "<title\|<meta.*description\|<meta.*keywords" || true
+          curl -s https://www.kmupowersuite.com/ | grep -i "<title\|<meta.*description\|<meta.*keywords" || true
       
       - name: Check structured data
         run: |
-          curl -s "https://search.google.com/test/rich-results?url=https://www.powerplatformtip.com" || true
+          curl -s "https://search.google.com/test/rich-results?url=https://www.kmupowersuite.com/" || true
       
-      - name: Check social media tags
+      - name: Check Open Graph and Twitter Cards
         run: |
-          curl -s https://www.powerplatformtip.com | grep -i "og:\|twitter:" || true
+          curl -s https://www.kmupowersuite.com/ | grep -i "og:\|twitter:" || true

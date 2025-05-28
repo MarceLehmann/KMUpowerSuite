@@ -12,7 +12,7 @@ jobs:
       - name: Check website availability
         uses: gr2m/uptime-action@v1
         with:
-          url: "https://www.powerplatformtip.com"
+          url: "https://www.kmupowersuite.com/"
           expected_status: "200,201,301,302"
       
       - name: Notify on failure
