@@ -29,3 +29,11 @@ jobs:
           base: main
           head: HEAD
         continue-on-error: true
+- name: Add job summary
+  run: |
+    echo "### Security Scan" >> $GITHUB_STEP_SUMMARY
+    echo '<details><summary>Trivy & Trufflehog (gekürzt)</summary>\n' >> $GITHUB_STEP_SUMMARY
+    if [ -f trivy-results.txt ]; then head -n 30 trivy-results.txt >> $GITHUB_STEP_SUMMARY; fi
+    if [ -f trufflehog-results.txt ]; then head -n 30 trufflehog-results.txt >> $GITHUB_STEP_SUMMARY; fi
+    echo '\n</details>' >> $GITHUB_STEP_SUMMARY
+  shell: bash

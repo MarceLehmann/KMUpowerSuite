@@ -30,3 +30,8 @@ jobs:
             --sitemap https://www.kmupowersuite.com/sitemap.xml \
             --concurrency 2 || true
         continue-on-error: true
+      - name: Add job summary
+        run: |
+          echo "### Accessibility Audit" >> $GITHUB_STEP_SUMMARY
+          echo "Accessibility tests completed. See log for details." >> $GITHUB_STEP_SUMMARY
+        shell: bash

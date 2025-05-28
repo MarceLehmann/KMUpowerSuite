@@ -33,3 +33,10 @@ jobs:
             --assert.preset="lighthouse:no-pwa" \
             --upload.target=temporary-public-storage
         continue-on-error: true
+      - name: Add job summary
+        run: |
+          echo "### Core Web Vitals" >> $GITHUB_STEP_SUMMARY
+          echo '\n<details><summary>Ergebnisse</summary>\n' >> $GITHUB_STEP_SUMMARY
+          echo "(siehe Log f\u00fcr Details)" >> $GITHUB_STEP_SUMMARY
+          echo '\n</details>' >> $GITHUB_STEP_SUMMARY
+        shell: bash

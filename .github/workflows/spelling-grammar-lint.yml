@@ -34,3 +34,13 @@ jobs:
           grep -r "recieve\|seperate\|definately" _posts/ || echo "✅ No common English typos found"
           echo "✅ Basic typo check completed"
         continue-on-error: true
+      - name: Add job summary
+        run: |
+          echo "### Spelling & Grammar Lint" >> $GITHUB_STEP_SUMMARY
+          echo '\n<details><summary>markdownlint</summary>\n' >> $GITHUB_STEP_SUMMARY
+          markdownlint "**/*.md" --ignore node_modules --ignore _site || true | head -n 20 >> $GITHUB_STEP_SUMMARY
+          echo '\n</details>' >> $GITHUB_STEP_SUMMARY
+          echo '\n<details><summary>Typo Check</summary>\n' >> $GITHUB_STEP_SUMMARY
+          echo "(siehe Log für Details)" >> $GITHUB_STEP_SUMMARY
+          echo '\n</details>' >> $GITHUB_STEP_SUMMARY
+        shell: bash

@@ -40,3 +40,9 @@ jobs:
           echo "Checking for required PowerPlatform tags..."
           grep -r "powerplatform\|power platform\|powerapps\|power automate" _posts/ || echo "No PowerPlatform content found"
         continue-on-error: true
+
+      - name: Add job summary
+        run: |
+          echo "### Content Validation" >> $GITHUB_STEP_SUMMARY
+          echo "Encoding issues, front matter, and metadata validation completed. See log for details." >> $GITHUB_STEP_SUMMARY
+        shell: bash

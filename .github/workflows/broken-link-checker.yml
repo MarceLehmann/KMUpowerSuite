@@ -36,3 +36,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         continue-on-error: true
+      - name: Add job summary
+        run: |
+          echo "### Broken Link Checker" >> $GITHUB_STEP_SUMMARY
+          echo "(siehe Log für Details)" >> $GITHUB_STEP_SUMMARY
+        shell: bash

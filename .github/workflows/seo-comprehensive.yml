@@ -32,3 +32,8 @@ jobs:
         run: |
           curl -s https://www.kmupowersuite.com/ | grep -i "og:\|twitter:" || true
         continue-on-error: true
+      - name: Add job summary
+        run: |
+          echo "### SEO Audit" >> $GITHUB_STEP_SUMMARY
+          echo "SEO-Prüfung abgeschlossen. Siehe Log für Details." >> $GITHUB_STEP_SUMMARY
+        shell: bash

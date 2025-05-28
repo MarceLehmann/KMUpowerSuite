@@ -29,8 +29,16 @@ jobs:
         run: sleep 30  # Kurz warten bis Deployment vollständig propagiert ist
       
       - name: Run Lighthouse CI against live site
+        id: lighthouse
         run: |
           npx lhci autorun \
             --collect.url="https://www.kmupowersuite.com/" \
-            --upload.target=temporary-public-storage
+            --upload.target=temporary-public-storage > lhci-output.txt || true
         continue-on-error: true
+      - name: Add job summary
+        run: |
+          echo "### Lighthouse Audit" >> $GITHUB_STEP_SUMMARY
+          echo '\n<details><summary>Ergebnis (gekürzt)</summary>\n' >> $GITHUB_STEP_SUMMARY
+          head -n 50 lhci-output.txt >> $GITHUB_STEP_SUMMARY
+          echo '\n</details>' >> $GITHUB_STEP_SUMMARY
+        shell: bash

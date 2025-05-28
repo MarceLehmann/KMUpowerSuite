@@ -21,3 +21,13 @@ jobs:
             echo "❌ Website is DOWN ($STATUS)"
             exit 1
           fi
+      - name: Add job summary
+        run: |
+          if [[ "$STATUS" =~ ^(200|201|301|302)$ ]]; then
+            echo "### Uptime Check" >> $GITHUB_STEP_SUMMARY
+            echo "✅ Website is UP ($STATUS)" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "### Uptime Check" >> $GITHUB_STEP_SUMMARY
+            echo "❌ Website is DOWN ($STATUS)" >> $GITHUB_STEP_SUMMARY
+          fi
+        shell: bash

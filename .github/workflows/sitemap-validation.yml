@@ -50,3 +50,11 @@ jobs:
         run: |
           echo "Sitemap content preview:"
           head -20 _site/sitemap.xml
+      
+      - name: Add job summary
+        run: |
+          echo "### Sitemap Validation" >> $GITHUB_STEP_SUMMARY
+          echo '\n<details><summary>xmllint & Build Log (gekürzt)</summary>\n' >> $GITHUB_STEP_SUMMARY
+          tail -n 30 $GITHUB_WORKSPACE/_site/sitemap.xml | head -n 20 >> $GITHUB_STEP_SUMMARY || true
+          echo '\n</details>' >> $GITHUB_STEP_SUMMARY
+        shell: bash

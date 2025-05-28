@@ -22,3 +22,9 @@ jobs:
           name: content-backup-$(date +%Y%m%d)
           path: content-backup-*.tar.gz
           retention-days: 90
+      
+      - name: Add job summary
+        run: |
+          echo "### Content Backup" >> $GITHUB_STEP_SUMMARY
+          echo "Backup archive created and uploaded successfully." >> $GITHUB_STEP_SUMMARY
+        shell: bash
