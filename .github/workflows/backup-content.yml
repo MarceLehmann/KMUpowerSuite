@@ -2,7 +2,7 @@ name: Content Backup
 
 on:
   schedule:
-    - cron: '0 1 * * 0'  # Sonntags um 1 Uhr
+    - cron: '0 1 * * 3'  # Mittwochs um 1 Uhr
   workflow_dispatch:
 
 jobs:
